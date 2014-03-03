@@ -1,0 +1,3 @@
+[submodule "diddleman"]
+	path = diddleman
+	url = git@github.com:dhemery/diddleman

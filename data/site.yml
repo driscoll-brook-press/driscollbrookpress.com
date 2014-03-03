@@ -1,0 +1,9 @@
+title: Driscoll Brook Press
+shortname: driscollbrookpress
+domain: driscollbrookpress.com
+copyright: 2014 Driscoll Brook Press
+author:
+  name: Dale Hartley Emery
+  email: dale@dalehartleyemery.com
+modules:
+- site
