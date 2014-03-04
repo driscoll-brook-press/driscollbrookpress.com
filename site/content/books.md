@@ -12,3 +12,6 @@ title: Books
 
 [Refund](/title/refund/)
 
+[Tailor's Tears](/title/tailors-tears/)
+
+[Yantriel's Privy](/title/yantriels-privy/)
