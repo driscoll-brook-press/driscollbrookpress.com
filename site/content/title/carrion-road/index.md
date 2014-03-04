@@ -2,4 +2,7 @@
 title: Carrion Road
 ---
 
-![Carrion Road](carrion-road-cover-web.jpg "Refund")
+Coming soon
+from Driscoll Brook Press.
+
+![Carrion Road](carrion-road-cover-web.jpg "Carrion Road")
