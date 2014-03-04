@@ -14,4 +14,6 @@ title: Books
 
 [Tailor's Tears](/title/tailors-tears/)
 
+[The Winchester Mystery Novel](/title/winchester-mystery-novel/)
+
 [Yantriel's Privy](/title/yantriels-privy/)
