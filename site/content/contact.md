@@ -4,7 +4,7 @@ title: Contact Driscoll Brook Press
 
 # Email
 
-**[info@driscollbrookpress.com](mailto:info@driscollbrookpress.com)**
+**[publisher@driscollbrookpress.com](mailto:publisher@driscollbrookpress.com)**
 
 # Mail
 
