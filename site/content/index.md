@@ -31,7 +31,7 @@ A contemporary fantasy short story
 from
 [Dale Hartley Emery](http://dalehartleyemery.com/).
 
-[Kindle edition]()
+[Kindle edition](http://www.amazon.com/dp/B00J45LIZ8/?tag=driscollbrookpress-20)
 available now.
 
 Paperback
@@ -58,7 +58,7 @@ A time travel short story
 from
 [Dale Hartley Emery](http://dalehartleyemery.com/).
 
-[Kindle edition](http://www.amazon.com/gp/product/B00IZRZWGC/ref=as_li_tf_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B00IZRZWGC&amp;linkCode=as2&amp;tag=driscollbrookpress-20)
+[Kindle edition](http://www.amazon.com/dp/B00IZRZWGC/?tag=driscollbrookpress-20)
 available now.
 
 Paperback

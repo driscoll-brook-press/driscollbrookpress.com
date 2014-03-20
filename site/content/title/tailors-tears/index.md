@@ -28,7 +28,7 @@ A contemporary fantasy short story
 from
 [Dale Hartley Emery](http://dalehartleyemery.com/).
 
-[Kindle edition]()
+[Kindle edition](http://www.amazon.com/dp/B00J45LIZ8/?tag=driscollbrookpress-20)
 available now.
 
 Paperback

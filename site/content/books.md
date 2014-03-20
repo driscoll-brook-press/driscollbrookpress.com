@@ -4,9 +4,9 @@ title: Books
 
 # Available Now
 
-[Refund](/title/refund/)&thinsp;&#8212;&thinsp;[Kindle edition](http://www.amazon.com/gp/product/B00IZRZWGC/ref=as_li_tf_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B00IZRZWGC&linkCode=as2&tag=driscollbrookpress-20)
+[Refund](/title/refund/)&thinsp;&#8212;&thinsp;[Kindle edition](http://www.amazon.com/dp/B00IZRZWGC/?tag=driscollbrookpress-20)
 
-[Tailor's Tears](/title/tailors-tears/)&thinsp;&#8212;&thinsp;[Kindle edition]()
+[Tailor's Tears](/title/tailors-tears/)&thinsp;&#8212;&thinsp;[Kindle edition](http://www.amazon.com/dp/B00J45LIZ8/?tag=driscollbrookpress-20)
 
 # Coming Soon
 
