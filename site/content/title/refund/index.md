@@ -4,6 +4,8 @@ title: Refund
 # [Dale Hartley Emery](http://dalehartleyemery.com/)
 
 Available now: 
+[Paperback](http://www.amazon.com/dp/163261009/?tag=driscollbrookpress-20)
+|
 [Kindle](http://www.amazon.com/dp/B00IZRZWGC/?tag=driscollbrookpress-20)
 |
 [Kobo](http://store.kobobooks.com/en-US/ebook/refund)
