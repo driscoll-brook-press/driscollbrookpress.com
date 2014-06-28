@@ -1,5 +1,7 @@
 ---
 title: Contact Driscoll Brook Press
+layout: article
+
 ---
 
 # Email

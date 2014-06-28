@@ -1,6 +1,8 @@
 title: Driscoll Brook Press
 shortname: driscollbrookpress
 domain: driscollbrookpress.com
+timezone: Pacific Time (US & Canada)
+book_pattern: title/:title
 copyright: 2014 Driscoll Brook Press
 author:
   name: Dale Hartley Emery

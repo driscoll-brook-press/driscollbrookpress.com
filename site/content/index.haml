@@ -1,0 +1,10 @@
+---
+title: New From Driscoll Brook Press
+layout: article
+---
+%section.post-list
+  - page_articles.select{|book| book.data.timing == 'new'}.sort{|a,b| a.slug <=> b.slug}.each do|book|
+    %article.post
+      = partial "layouts/book/header", locals: {book: book}
+      = partial "layouts/book/purchase", locals: {book: book.data}
+      = partial "layouts/book/body", locals: {body: book.body}

@@ -1,5 +1,7 @@
 ---
 title: About Driscoll Brook Press
+layout: article
+
 ---
 
 Driscoll Brook Press

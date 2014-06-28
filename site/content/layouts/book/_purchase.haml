@@ -1,0 +1,27 @@
+-if book.paperback
+  %p
+    Paperback:
+
+    -if book.paperback.amazon
+      %a{href: "http://www.amazon.com/dp/#{book.isbn10}?tag=driscollbrookpress-20"} Amazon
+
+    -if book.paperback.createspace
+      %a{href: "http://www.createspace.com/#{book.paperback.createspace}"} CreateSpace
+
+-if book.ebook
+  %p
+    Ebook:
+    -if book.ebook.ibooks
+      %a{href: "https://itunes.apple.com/us/book/id#{book.ebook.ibooks}?mt=11"} iBooks
+
+    -if book.ebook.kindle
+      %a{href: "http://www.amazon.com/dp/#{book.ebook.kindle}?tag=driscollbrookpress-20"} Kindle
+      
+    -if book.ebook.kobo
+      %a{href: "http://store.kobobooks.com/en-US/ebook/#{book.ebook.kobo}"} Kobo
+
+    -if book.ebook.nook
+      %a{href: "http://www.barnesandnoble.com/s/#{book.ebook.nook}"} Nook
+
+    -if book.ebook.smashwords
+      %a{href: "https://www.smashwords.com/books/view/#{book.ebook.smashwords}"} Smashwords
