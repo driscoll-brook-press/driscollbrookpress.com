@@ -1,11 +1,10 @@
 ---
 title: Refund
 date: 2014/03/03
-timing: new
+available: now
 isbn10: 163261009
 paperback:
   amazon: yes
-  createspace: 
 ebook:
   ibooks: 
   kindle: B00IZRZWGC

@@ -1,11 +1,10 @@
 ---
 title: Tailor's Tears
 date: 2014/03/03
-timing: new
+available: now
 isbn10: 1632610000
 paperback:
   amazon: yes
-  createspace: 
 ebook:
   ibooks: 
   kindle: B00J45LIZ8

@@ -1,11 +1,11 @@
 ---
 title: Yantriel's Privy
 date: 2014/03/03
-timing: new
+available: now
+isnew: true
 isbn10: 163261007
 paperback:
-  amazon: 
-  createspace: 
+  amazon: yes
 ebook:
   ibooks: 
   kindle: B00K98A46S

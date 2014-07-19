@@ -1,12 +1,11 @@
 ---
 title: Carrion Road
 date: 2014/03/03
-timing: new
+available: now
 isbn10: 1632610051
 isbn13: 978-1-63261-005-8
 paperback:
   amazon: yes
-  createspace: 4853180
 ebook:
   ibooks: 873284950
   kindle: B00J6PVMOI

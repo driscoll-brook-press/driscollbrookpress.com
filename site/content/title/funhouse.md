@@ -1,11 +1,10 @@
 ---
 title: Funhouse
 date: 2014/03/03
-timing: new
+available: now
 isbn10: 163261008
 paperback:
   amazon: yes
-  createspace: 
 ebook:
   ibooks: 
   kindle: B00JDZJ6L2 
