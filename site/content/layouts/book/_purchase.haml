@@ -1,40 +1,11 @@
 - if book.price && book.price.paperback
   %p
     Paperback #{book.price.paperback}
-
-- marker = ":"
-
--if book.paperback && book.available == 'Now'
-  -if book.paperback.amazon
-    #{marker}
-    %a{href: "http://www.amazon.com/dp/#{book.isbn10}?tag=driscollbrookpress-20"} Amazon
+    -if book.available == 'Now'
+      = paperback_links(book).join(" | ")
 
 - if book.price && book.price.paperback
   %p
     Ebook #{book.price.ebook}
-
--if book.ebook && book.available == 'Now'
-
-  -if book.ebook.ibooks
-    #{marker}
-    %a{href: "https://itunes.apple.com/us/book/id#{book.ebook.ibooks}?mt=11"} iBooks
-    - marker = " | "
-
-  -if book.ebook.kindle
-    #{marker}
-    %a{href: "http://www.amazon.com/dp/#{book.ebook.kindle}?tag=driscollbrookpress-20"} Kindle
-    - marker = " | "
-      
-  -if book.ebook.kobo
-    #{marker}
-    %a{href: "http://store.kobobooks.com/en-US/ebook/#{book.ebook.kobo}"} Kobo
-    - marker = " | "
-
-  -if book.ebook.nook
-    #{marker}
-    %a{href: "http://www.barnesandnoble.com/s/#{book.ebook.nook}"} Nook
-    - marker = " | "
-
-  -if book.ebook.smashwords
-    #{marker}
-    %a{href: "https://www.smashwords.com/books/view/#{book.ebook.smashwords}"} Smashwords
+    -if book.available == 'Now'
+      = ebook_links(book).join(" | ")

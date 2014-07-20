@@ -12,3 +12,5 @@ $middleman.activate :directory_indexes
 
 $middleman.set :haml, { ugly: true }
 
+require "helpers/book_helpers.rb"
+$middleman.helpers BookHelpers
