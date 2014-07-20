@@ -3,13 +3,12 @@ module BookHelpers
     
     def ebook_links book
         links = []
-        return links unless book.ebook
+        return [] unless book.ebook
         links <<= ibooks_link(book) if book.ebook.ibooks
         links <<= kindle_link(book) if book.ebook.kindle
         links <<= kobo_link(book) if book.ebook.kobo
         links <<= nook_link(book) if book.ebook.nook
         links <<= smashwords_link(book) if book.ebook.smashwords
-        links
     end
 
     def paperback_links book

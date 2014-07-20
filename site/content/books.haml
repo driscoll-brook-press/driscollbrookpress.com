@@ -4,7 +4,7 @@ layout: article
 ---
 
 %section.post-list
-  - page_articles.select{|book| book.data.available && book.data.available == 'Now'}.sort{|a,b| a.slug <=> b.slug}.each do|book|
+  - page_articles.select{|book| book.data.available == 'Now'}.sort{|a,b| a.slug <=> b.slug}.each do|book|
     %article.post
       = partial "layouts/book/header", locals: {book: book}
       = partial "layouts/book/purchase", locals: {book: book.data}

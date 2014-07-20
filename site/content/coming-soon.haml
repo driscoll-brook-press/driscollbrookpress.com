@@ -7,6 +7,4 @@ layout: article
     %article.post
       = partial "layouts/book/header", locals: {book: book}
       = partial "layouts/book/body", locals: {body: book.body}
-      %h2
-        Available #{book.data.available}
       = partial "layouts/book/purchase", locals: {book: book.data}
