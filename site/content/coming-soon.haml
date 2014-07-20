@@ -1,10 +1,10 @@
 ---
-title: Coming Soon from Driscoll Brook Press
+title: Coming Soon
 layout: article
 ---
 
 %section.post-list
-  - page_articles.select{|book| book.data.available == 'soon'}.sort{|a,b| a.slug <=> b.slug}.each do|book|
+  - page_articles.select{|book| book.data.available == 'soon'}.sort{|a,b| a.date <=> b.date}.each do|book|
     %article.post
       = partial "layouts/book/header", locals: {book: book}
       = partial "layouts/book/body", locals: {body: book.body}

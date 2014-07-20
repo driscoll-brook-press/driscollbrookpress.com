@@ -1,8 +1,8 @@
 ---
 title: Yantriel's Privy
-date: 2014/03/03
+date: 2014/05/10
+pubdate: May 10, 2014
 available: now
-isnew: true
 isbn10: 163261007
 paperback:
   amazon: yes

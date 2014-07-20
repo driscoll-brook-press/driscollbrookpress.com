@@ -1,6 +1,7 @@
 ---
 title: Funhouse
-date: 2014/03/03
+date: 2014/03/31
+pubdate: March 31, 2014
 available: now
 isbn10: 163261008
 paperback:

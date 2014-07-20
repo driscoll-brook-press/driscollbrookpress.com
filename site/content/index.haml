@@ -1,10 +1,10 @@
 ---
-title: New From Driscoll Brook Press
+title: New Releases
 layout: article
 ---
 %section.post-list
-  - page_articles.select{|book| book.data.isnew == true}.sort{|a,b| a.slug <=> b.slug}.each do|book|
+  - page_articles.select{|book| book.data.available == 'now'}.sort{|a,b| a.pubdate <=> b.pubdate}.each do|book|
     %article.post
       = partial "layouts/book/header", locals: {book: book}
-      = partial "layouts/book/purchase", locals: {book: book.data}
       = partial "layouts/book/body", locals: {body: book.body}
+      = partial "layouts/book/purchase", locals: {book: book.data}

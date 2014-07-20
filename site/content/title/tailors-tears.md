@@ -1,6 +1,7 @@
 ---
 title: Tailor's Tears
-date: 2014/03/03
+date: 2014/03/19
+pubdate: March 19, 2014
 available: now
 isbn10: 1632610000
 paperback:

@@ -1,6 +1,7 @@
 ---
 title: Carrion Road
-date: 2014/03/03
+date: 2014/03/22
+pubdate: March 22, 2014
 available: now
 isbn10: 1632610051
 isbn13: 978-1-63261-005-8

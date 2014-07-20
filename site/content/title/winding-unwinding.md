@@ -1,7 +1,9 @@
 ---
 title: Winding Unwinding
-date: 2014/07/18
+date: 2014/07/17
+pubdate: 2014/08/11
 available: soon
+
 # isbn10: 
 # paperback:
 #  amazon: 

@@ -1,6 +1,7 @@
 ---
 title: Refund
-date: 2014/03/03
+date: 2014/03/13
+pubdate: March 13, 2014
 available: now
 isbn10: 163261009
 paperback:
