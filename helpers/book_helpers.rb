@@ -1,6 +1,10 @@
 module BookHelpers
     AMAZON_AFFILIATE_ID = "driscollbrookpress-20"
     
+    def cover_url book
+        "/images/#{File.basename book.slug, '.html'}-cover-web.jpg"
+    end
+
     def ebook_links book
         links = []
         return [] unless book.ebook

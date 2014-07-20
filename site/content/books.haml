@@ -1,11 +1,10 @@
 ---
-title: Available Now
+title: Available Now From Driscoll Brook Press
 layout: article
 ---
 
 %section.post-list
   - page_articles.select{|book| book.data.available == 'Now'}.sort{|a,b| a.slug <=> b.slug}.each do|book|
-    %article.post
-      = partial "layouts/book/header", locals: {book: book}
-      = partial "layouts/book/purchase", locals: {book: book.data}
+    %a{href: book.url}
+      %img{src: "#{cover_url book}", style: 'width: 30%'}
 

@@ -5,6 +5,10 @@ layout: article
 %section.post-list
   - page_articles.select{|book| book.data[:available] && book.data.available == 'Now'}.sort{|a,b| a.date <=> b.date}.last.tap do|book|
     %article.post
+      %a{href: book.url}
+        %img{src: "#{cover_url book}", clear: 'both', style: 'float: right; width: 40%'}
       = partial "layouts/book/header", locals: {book: book}
       = partial "layouts/book/body", locals: {body: book.body}
       = partial "layouts/book/purchase", locals: {book: book.data}
+
+
