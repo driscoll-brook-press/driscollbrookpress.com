@@ -1,9 +1,11 @@
 ---
 title: Refund
 date: 2014/03/13
-pubdate: March 13, 2014
-available: now
+available: Now
 isbn10: 163261009
+price:
+  paperback: $4.99
+  ebook: $2.99
 paperback:
   amazon: yes
 ebook:

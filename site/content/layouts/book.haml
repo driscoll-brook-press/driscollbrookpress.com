@@ -1,7 +1,8 @@
 - wrap_layout :page do
   %article.post-page
     = partial "layouts/book/header", locals: {book: current_page}
-    = partial "layouts/book/purchase", locals: {book: current_page.data}
     = partial "layouts/book/body", locals: {body: yield}
+    = partial "layouts/book/availability", locals: {book: current_page.data}
+    = partial "layouts/book/purchase", locals: {book: current_page.data}
     = image_tag "/images/#{File.basename current_page.slug, '.html'}-cover-web.jpg"
 

@@ -2,10 +2,11 @@
 title: Coming Soon
 layout: article
 ---
-
 %section.post-list
-  - page_articles.select{|book| book.data.available == 'soon'}.sort{|a,b| a.date <=> b.date}.each do|book|
+  - page_articles.select{|book| book.data[:available] && book.data.available != 'Now'}.sort{|a,b| a.date <=> b.date}.first.tap do|book|
     %article.post
       = partial "layouts/book/header", locals: {book: book}
       = partial "layouts/book/body", locals: {body: book.body}
-
+      %h2
+        Available #{book.data.available}
+      = partial "layouts/book/purchase", locals: {book: book.data}

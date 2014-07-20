@@ -1,12 +1,16 @@
 ---
 title: Yantriel's Privy
 date: 2014/05/10
-pubdate: May 10, 2014
-available: now
+available: Now
 isbn10: 163261007
+price:
+  paperback: $4.99
+  ebook: $2.99
 paperback:
+  price: $4.99
   amazon: yes
 ebook:
+  price: $2.99
   ibooks: 
   kindle: B00K98A46S
   kobo: yantriel-s-privy

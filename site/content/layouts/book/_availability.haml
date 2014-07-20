@@ -1,7 +1,2 @@
--case book.available
--when 'now'
-  = partial "layouts/book/purchase", locals: {book: book}
--when 'soon'
-  %p Coming Soon!
--else
-  %p Can't Touch This!
+%h2
+  Available #{book.available}

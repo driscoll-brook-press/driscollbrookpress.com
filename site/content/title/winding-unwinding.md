@@ -1,8 +1,10 @@
 ---
 title: Winding Unwinding
 date: 2014/07/17
-pubdate: 2014/08/11
-available: soon
+available: August 11, 2014
+price:
+  paperback: $9.99
+  ebook: $5.99
 
 # isbn10: 
 # paperback:
@@ -16,8 +18,6 @@ available: soon
 #  smashwords: 
 
 ---
-
-
 
 FIVE SHORT FANTASIES FROM RIGHT NEXT DOOR
 
@@ -33,5 +33,5 @@ Two young brothers fight for their lives in a funhouse.
 A grieving widower’s outhouse overflows with memories...
 and something worse.
 
-Peak through the keyhole into these five fantastic stories from
+Peek through the keyhole into these five fantastic stories from
 [Dale Hartley Emery](http://dalehartleyemery.com/).

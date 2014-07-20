@@ -1,27 +1,40 @@
--if book.paperback
+- if book.price && book.price.paperback
   %p
-    Paperback:
+    Paperback #{book.price.paperback}
 
-    -if book.paperback.amazon
-      %a{href: "http://www.amazon.com/dp/#{book.isbn10}?tag=driscollbrookpress-20"} Amazon
+- marker = ":"
 
-    -if book.paperback.createspace
-      %a{href: "http://www.createspace.com/#{book.paperback.createspace}"} CreateSpace
+-if book.paperback && book.available == 'Now'
+  -if book.paperback.amazon
+    #{marker}
+    %a{href: "http://www.amazon.com/dp/#{book.isbn10}?tag=driscollbrookpress-20"} Amazon
 
--if book.ebook
+- if book.price && book.price.paperback
   %p
-    Ebook:
-    -if book.ebook.ibooks
-      %a{href: "https://itunes.apple.com/us/book/id#{book.ebook.ibooks}?mt=11"} iBooks
+    Ebook #{book.price.ebook}
 
-    -if book.ebook.kindle
-      %a{href: "http://www.amazon.com/dp/#{book.ebook.kindle}?tag=driscollbrookpress-20"} Kindle
+-if book.ebook && book.available == 'Now'
+
+  -if book.ebook.ibooks
+    #{marker}
+    %a{href: "https://itunes.apple.com/us/book/id#{book.ebook.ibooks}?mt=11"} iBooks
+    - marker = " | "
+
+  -if book.ebook.kindle
+    #{marker}
+    %a{href: "http://www.amazon.com/dp/#{book.ebook.kindle}?tag=driscollbrookpress-20"} Kindle
+    - marker = " | "
       
-    -if book.ebook.kobo
-      %a{href: "http://store.kobobooks.com/en-US/ebook/#{book.ebook.kobo}"} Kobo
+  -if book.ebook.kobo
+    #{marker}
+    %a{href: "http://store.kobobooks.com/en-US/ebook/#{book.ebook.kobo}"} Kobo
+    - marker = " | "
 
-    -if book.ebook.nook
-      %a{href: "http://www.barnesandnoble.com/s/#{book.ebook.nook}"} Nook
+  -if book.ebook.nook
+    #{marker}
+    %a{href: "http://www.barnesandnoble.com/s/#{book.ebook.nook}"} Nook
+    - marker = " | "
 
-    -if book.ebook.smashwords
-      %a{href: "https://www.smashwords.com/books/view/#{book.ebook.smashwords}"} Smashwords
+  -if book.ebook.smashwords
+    #{marker}
+    %a{href: "https://www.smashwords.com/books/view/#{book.ebook.smashwords}"} Smashwords
