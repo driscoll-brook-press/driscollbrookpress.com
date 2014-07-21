@@ -9,10 +9,10 @@ price:
 paperback:
   amazon: yes
 ebook:
-  ibooks: 
+  ibooks: 873299433
   kindle: B00IZRZWGC
   kobo: refund
-  nook: 
+  nook: 2940149439850
   smashwords: 425125
 
 ---

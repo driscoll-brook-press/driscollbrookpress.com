@@ -9,10 +9,10 @@ price:
 paperback:
   amazon: yes
 ebook:
-  ibooks: 
+  ibooks: 871945048
   kindle: B00J45LIZ8
   kobo: tailor-s-tears
-  nook: 
+  nook: 2940149439843
   smashwords: 425129
 
 ---
