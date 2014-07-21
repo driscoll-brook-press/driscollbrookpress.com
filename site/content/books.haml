@@ -5,6 +5,6 @@ layout: article
 
 %section.post-list
   - page_articles.select{|book| book.data.available == 'Now'}.sort{|a,b| a.slug <=> b.slug}.each do|book|
-    %a{href: book.url}
-      %img{src: "#{cover_url book}", style: 'width: 30%'}
+    - link_to book.url do
+      = image_tag cover_url(book), class: 'cover listing'
 
