@@ -7,14 +7,19 @@ price:
   ebook: $5.99
 
 isbn10: 1632610108
+# 1-63261-010-8
+isbn13: 978-1-63261-010-2
+eisbn10: 1-63261-011-6
+eisbn13: 978-1-63261-011-9
+
 paperback:
 #  amazon: yes
-# createspace: 
+#  createspace: 
 ebook:
-#  ibooks: 
+#  ibooks: 906549235
   kindle: B00MG65WQ8
   kobo: winding-unwinding
-#  nook: 
+#  nook: 2940149653751
   smashwords: 464822
 
 ---
