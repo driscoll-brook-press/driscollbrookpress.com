@@ -1,21 +1,21 @@
 ---
 title: Winding Unwinding
-date: 2014/07/17
-available: August 11, 2014
+date: 2014/08/05
+available: Now
 price:
-  paperback: $9.99
+  paperback: $10.99
   ebook: $5.99
 
-# isbn10: 
-# paperback:
-#  amazon: 
-#  createspace: 
-#ebook:
+isbn10: 1632610108
+paperback:
+#  amazon: yes
+# createspace: 
+ebook:
 #  ibooks: 
-#  kindle: 
-#  kobo: 
+  kindle: B00MG65WQ8
+  kobo: winding-unwinding
 #  nook: 
-#  smashwords: 
+  smashwords: 464822
 
 ---
 
@@ -35,3 +35,10 @@ and something worse.
 
 Peek through the keyhole into these five fantastic stories from
 [Dale Hartley Emery](http://dalehartleyemery.com/).
+
+Includes
+_Tailor's Tears,_
+_Carrion Road,_
+_Refund,_
+_Funhouse,_
+and _Yantriel's Privy._
