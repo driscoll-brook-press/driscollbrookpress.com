@@ -16,6 +16,7 @@ def isbn10(title, separator='')
         multiplier -= 1
     end
     check_digit = (11 - (checksum % 11)) % 11
+    check_digit = 'X' if check_digit == 10
     isbn_parts <<= check_digit.to_s
     isbn_parts.join(separator)
 end
@@ -32,7 +33,7 @@ def isbn13(title, separator='')
         multiplier = (multiplier + 2) % 4
     end
 
-    check_digit = 10 - (checksum % 10)
+    check_digit = (10 - (checksum % 10)) % 10
     isbn_parts <<= check_digit.to_s
     isbn_parts.join(separator)
 end

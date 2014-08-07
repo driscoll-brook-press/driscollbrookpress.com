@@ -3,15 +3,16 @@
 %p
   Paperback #{book.paperback.price}
   -if book.paperback.isbn
+    | #{isbn10(book.paperback.isbn, '-')}
     | #{isbn13(book.paperback.isbn, '-')}
--if book.available == 'Now'
-  %p
-    = paperback_links(book).join(", ")
 
 %p
   Ebook #{book.ebook.price}
   -if book.ebook.isbn
+    | #{isbn10(book.ebook.isbn, '-')}
     | #{isbn13(book.ebook.isbn, '-')}
+
 -if book.available == 'Now'
+  %h2 Buy
   %p
-    = ebook_links(book).join(", ")
+    = (paperback_links(book) + ebook_links(book)).join(" | ")

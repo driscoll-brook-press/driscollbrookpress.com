@@ -13,6 +13,7 @@ module BookHelpers
         links <<= kobo_link(book) if book.ebook.kobo
         links <<= nook_link(book) if book.ebook.nook
         links <<= smashwords_link(book) if book.ebook.smashwords
+        links
     end
 
     def paperback_links book
