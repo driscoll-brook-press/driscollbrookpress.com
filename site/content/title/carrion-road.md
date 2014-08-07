@@ -3,11 +3,16 @@ title: Carrion Road
 date: 2014/03/22
 pubdate: March 22, 2014
 available: Now
-isbn10: 1632610051
-isbn13: 978-1-63261-005-8
+
 price:
   paperback: $4.99
   ebook: $2.99
+
+isbn: 005
+eisbn: 002
+isbn10: 1632610051
+isbn13: 978-1-63261-005-8
+
 paperback:
   amazon: yes
 ebook:
@@ -16,6 +21,9 @@ ebook:
   kobo: carrion-road
   nook: 2940149439867
   smashwords: 425086
+
+collections:
+  - winding-unwinding
 
 ---
 

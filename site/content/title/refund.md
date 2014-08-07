@@ -2,10 +2,15 @@
 title: Refund
 date: 2014/03/13
 available: Now
+
+isbn: 009
+eisbn: 003
 isbn10: 1632610094
+
 price:
   paperback: $4.99
   ebook: $2.99
+
 paperback:
   amazon: yes
 ebook:
@@ -14,6 +19,9 @@ ebook:
   kobo: refund
   nook: 2940149439850
   smashwords: 425125
+
+collections:
+  - winding-unwinding
 
 ---
 

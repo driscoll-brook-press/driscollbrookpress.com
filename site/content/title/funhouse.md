@@ -2,10 +2,15 @@
 title: Funhouse
 date: 2014/03/31
 available: Now
-isbn10: 1632610086
+
 price:
   paperback: $4.99
   ebook: $2.99
+
+isbn: 008
+eisbn: 004
+isbn10: 1632610086
+
 paperback:
   amazon: yes
 ebook:
@@ -14,6 +19,9 @@ ebook:
   kobo: funhouse-10
   nook: 2940149439881
   smashwords: 424764
+
+collections:
+  - winding-unwinding
 
 ---
 

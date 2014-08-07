@@ -2,6 +2,7 @@
 title: Winding Unwinding
 date: 2014/08/05
 available: Now
+
 price:
   paperback: $10.99
   ebook: $5.99
@@ -23,7 +24,7 @@ ebook:
   nook: 2940149653751
   smashwords: 464822
 
-includes:
+stories:
   - tailors-tears
   - carrion-road
   - refund

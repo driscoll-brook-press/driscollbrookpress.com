@@ -2,10 +2,15 @@
 title: Tailor's Tears
 date: 2014/03/19
 available: Now
+
+isbn: 000
+eisbn: 001
 isbn10: 1632610000
+
 price:
   paperback: $4.99
   ebook: $2.99
+
 paperback:
   amazon: yes
 ebook:
@@ -14,6 +19,9 @@ ebook:
   kobo: tailor-s-tears
   nook: 2940149439843
   smashwords: 425129
+
+collections:
+ - winding-unwinding
 
 ---
 
