@@ -4,18 +4,14 @@ date: 2014/03/22
 pubdate: March 22, 2014
 available: Now
 
-price:
-  paperback: $4.99
-  ebook: $2.99
-
-isbn: 005
-eisbn: 002
-isbn10: 1632610051
-isbn13: 978-1-63261-005-8
-
 paperback:
+  price: $4.99
+  isbn: 5
   amazon: yes
+
 ebook:
+  price: $2.99
+  isbn: 2
   ibooks: 873284950
   kindle: B00J6PVMOI
   kobo: carrion-road

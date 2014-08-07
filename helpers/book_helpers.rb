@@ -23,7 +23,7 @@ module BookHelpers
     end
 
     def amazon_link book
-        link_to 'Amazon', asin_url(book.isbn10)
+        link_to 'Amazon', asin_url(isbn10(book.paperback.isbn))
     end
 
     def asin_url asin
@@ -65,5 +65,4 @@ module BookHelpers
     def smashwords_url book
         "https://www.smashwords.com/books/view/#{book.ebook.smashwords}"
     end
-
 end

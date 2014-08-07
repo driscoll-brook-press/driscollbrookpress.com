@@ -1,13 +1,17 @@
 %h2 Available #{book.available}
 
 %p
-  Paperback #{book.price.paperback}
-  -if book.available == 'Now' && book.paperback
-    &#8212;
+  Paperback #{book.paperback.price}
+  -if book.paperback.isbn
+    | #{isbn13(book.paperback.isbn, '-')}
+-if book.available == 'Now'
+  %p
     = paperback_links(book).join(", ")
 
 %p
-  Ebook #{book.price.ebook}
-  -if book.available == 'Now' && book.ebook
-    &#8212;
+  Ebook #{book.ebook.price}
+  -if book.ebook.isbn
+    | #{isbn13(book.ebook.isbn, '-')}
+-if book.available == 'Now'
+  %p
     = ebook_links(book).join(", ")

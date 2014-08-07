@@ -3,21 +3,15 @@ title: Winding Unwinding
 date: 2014/08/05
 available: Now
 
-price:
-  paperback: $10.99
-  ebook: $5.99
-
-isbn: 010
-eisbn: 011
-isbn10: 1632610108
-isbn13: 978-1-63261-010-2
-eisbn10: 1-63261-011-6
-eisbn13: 978-1-63261-011-9
-
 paperback:
-#  amazon: yes
+  price: $10.99
+  isbn: 10
+  amazon: no
 #  createspace: 
+
 ebook:
+  price: $5.99
+  isbn: 11
 #  ibooks: 906549235
   kindle: B00MG65WQ8
   kobo: winding-unwinding

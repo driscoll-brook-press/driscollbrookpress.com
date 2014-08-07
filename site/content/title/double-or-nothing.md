@@ -2,20 +2,18 @@
 title: Double or Nothing
 date: 2014/08/05
 available: September 15, 2014
-price:
-  paperback: $2.99
-  ebook: $4.99
 
-# isbn10: 
-# paperback:
-#  amazon: 
-#  createspace: 
-# ebook:
+paperback:
+  price: $4.99
+  amazon: no
+
+ebook:
+  price: $2.99
 #  ibooks: 
-# kindle: 
-# kobo: 
+#  kindle: 
+#  kobo: 
 #  nook: 
-# smashwords: 
+#  smashwords: 
 
 ---
 

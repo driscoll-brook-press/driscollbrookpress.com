@@ -3,17 +3,14 @@ title: Refund
 date: 2014/03/13
 available: Now
 
-isbn: 009
-eisbn: 003
-isbn10: 1632610094
-
-price:
-  paperback: $4.99
-  ebook: $2.99
-
 paperback:
+  price: $4.99
+  isbn: 9
   amazon: yes
+
 ebook:
+  price: $2.99
+  isbn: 3
   ibooks: 873299433
   kindle: B00IZRZWGC
   kobo: refund
