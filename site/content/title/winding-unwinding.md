@@ -6,8 +6,9 @@ price:
   paperback: $10.99
   ebook: $5.99
 
+isbn: 010
+eisbn: 011
 isbn10: 1632610108
-# 1-63261-010-8
 isbn13: 978-1-63261-010-2
 eisbn10: 1-63261-011-6
 eisbn13: 978-1-63261-011-9
@@ -19,8 +20,15 @@ ebook:
 #  ibooks: 906549235
   kindle: B00MG65WQ8
   kobo: winding-unwinding
-#  nook: 2940149653751
+  nook: 2940149653751
   smashwords: 464822
+
+includes:
+  - tailors-tears
+  - carrion-road
+  - refund
+  - funhouse
+  - yantriels-privy
 
 ---
 
@@ -47,3 +55,4 @@ _Carrion Road,_
 _Refund,_
 _Funhouse,_
 and _Yantriel's Privy._
+
