@@ -8,7 +8,7 @@ layout: article
       - link_to book.url do
         = image_tag cover_url(book), class: 'cover wrapped'
       = partial "layouts/book/header", locals: {book: book}
-      = partial "layouts/book/body", locals: {body: book.body}
+      = partial "layouts/book/body", locals: {body: book.body, book: book.data}
       = partial "layouts/book/publication", locals: {book: book.data}
 
 

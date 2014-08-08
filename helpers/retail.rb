@@ -1,4 +1,4 @@
-module BookHelpers
+module Retail
     AMAZON_AFFILIATE_ID = "driscollbrookpress-20"
     
     def cover_url book

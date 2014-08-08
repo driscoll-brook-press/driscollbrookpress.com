@@ -44,10 +44,3 @@ and something worse.
 Peek through the keyhole into these five fantastic stories from
 [Dale Hartley Emery](http://dalehartleyemery.com/).
 
-Includes
-_Tailor's Tears,_
-_Carrion Road,_
-_Refund,_
-_Funhouse,_
-and _Yantriel's Privy._
-

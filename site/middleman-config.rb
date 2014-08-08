@@ -12,5 +12,7 @@ $middleman.activate :directory_indexes
 
 $middleman.set :haml, { ugly: true }
 
-require "helpers/book_helpers.rb"
-$middleman.helpers BookHelpers
+require "helpers/retail.rb"
+require "helpers/isbn.rb"
+require "helpers/titles.rb"
+$middleman.helpers Retail, ISBN, Titles

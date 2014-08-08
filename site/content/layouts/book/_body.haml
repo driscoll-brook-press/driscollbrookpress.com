@@ -1,2 +1,7 @@
 %section.post-body
   = body
+  -if book.stories
+    %h2 Contents
+    - book.stories.each do |story|
+      %div #{title_link(story)}
+    %p Each story is also available as a standalone book.

@@ -16,3 +16,9 @@
   %h2 Buy
   %p
     = (paperback_links(book) + ebook_links(book)).join(" | ")
+
+-if book.collections
+  %h2  Collections
+  %p This story and others are available in:
+  - book.collections.each do |collection|
+    %div #{title_link(collection)}
