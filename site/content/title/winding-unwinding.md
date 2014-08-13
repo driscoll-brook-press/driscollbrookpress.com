@@ -12,7 +12,7 @@ paperback:
 ebook:
   price: $5.99
   isbn: 11
-#  ibooks:  906549235
+  ibooks:  906549235
   kindle: B00MG65WQ8
   kobo: winding-unwinding
   nook: 2940149653751
