@@ -1,0 +1,8 @@
+- link_to cover_url(book) do
+  = image_tag cover_url(book), class: 'cover wrapped'
+= partial "layouts/book/header", locals: {book: book}
+= partial "layouts/book/body", locals: {body: book.body, book: book.data}
+= partial "layouts/book/retail", locals: {book: book.data}
+= partial "layouts/book/publication", locals: {book: book.data}
+
+

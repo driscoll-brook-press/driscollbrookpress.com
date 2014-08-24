@@ -1,8 +1,4 @@
 - wrap_layout :page do
   %article.post-page
-    - link_to cover_url(current_page) do
-      = image_tag cover_url(current_page), class: 'cover wrapped'
-    = partial "layouts/book/header", locals: {book: current_page}
-    = partial "layouts/book/body", locals: {body: yield, book: current_page.data}
-    = partial "layouts/book/publication", locals: {book: current_page.data}
+    = partial "layouts/book/full", locals: {book: current_page}
 
