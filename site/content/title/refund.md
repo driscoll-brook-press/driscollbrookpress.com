@@ -1,7 +1,8 @@
 ---
 title: Refund
 date: 2014/03/13
-available: Now
+available: true
+pubdate: March 13, 2014
 
 paperback:
   price: $4.99

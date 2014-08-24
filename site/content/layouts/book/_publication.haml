@@ -1,4 +1,12 @@
-%h2 Available #{book.available}
+%h2 Publication Details
+
+-if book.available
+  %p= "Published #{book.pubdate}"
+-elsif !book.pubdate.nil?
+  %p= "Coming #{book.pubdate}"
+
+-if book.pubdate
+  %p
 
 %p
   Paperback #{book.paperback.price}

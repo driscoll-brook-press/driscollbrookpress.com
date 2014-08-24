@@ -1,7 +1,8 @@
 ---
 title: Funhouse
 date: 2014/03/31
-available: Now
+available: yes
+pubdate: March 31, 2014
 
 paperback:
   price: $4.99
