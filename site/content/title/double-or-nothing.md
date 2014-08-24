@@ -11,11 +11,10 @@ paperback:
 ebook:
   price: $2.99
   isbn: 13
-#  ibooks: 
-#  kindle: 
-#  kobo: 
+#  ibooks: 912075802
+  kindle: B00MZ8Y9AW
+  kobo: double-or-nothing-18
 #  nook: 
-#  smashwords: 
 
 ---
 
