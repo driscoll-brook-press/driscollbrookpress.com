@@ -6,6 +6,7 @@ pubdate: August 11, 2014
 
 paperback:
   price: $10.99
+  pages: 130
   isbn: 10
   amazon: yes
 #  createspace: 

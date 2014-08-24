@@ -5,7 +5,7 @@ layout: article
 %section.post-list
   - page_articles.select{|book| !book.data.available && !book.data.pubdate.nil?}.sort{|a,b| a.date <=> b.date}.first.tap do|book|
     %article.post
-      = partial "layouts/book/full", locals: { book: book}
+      = partial "layouts/book/full", locals: { book: book, cover_link: book.url}
 
 
 

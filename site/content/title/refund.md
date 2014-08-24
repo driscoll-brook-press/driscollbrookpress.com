@@ -5,6 +5,7 @@ available: true
 pubdate: March 13, 2014
 
 paperback:
+  pages: 56
   price: $4.99
   isbn: 9
   amazon: yes
