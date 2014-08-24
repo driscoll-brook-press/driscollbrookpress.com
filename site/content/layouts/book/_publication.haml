@@ -12,10 +12,10 @@
     | #{isbn10(book.ebook.isbn, '-')}
     | #{isbn13(book.ebook.isbn, '-')}
 
--if book.available == 'Now'
-  %h2 Buy
-  %p
-    = (paperback_links(book) + ebook_links(book)).join(" | ")
+- links = paperback_links(book) + ebook_links(book)
+- if !links.empty?
+  %h2= book.available == 'Now' ? 'Buy' : 'Preorder'
+  %p= links.join(" | ")
 
 -if book.collections
   %h2  Collections
