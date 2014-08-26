@@ -1,6 +1,7 @@
 module Retail
     AMAZON_AFFILIATE_ID = "driscollbrookpress-20"#
     ITUNES_AFFILIATE_ID = "1l3vpYQ"
+    SMASHWORDS_AFFILIATE_ID = "dalehartleyemery"
 
     def cover_url book
         "/images/#{File.basename book.slug, '.html'}-cover-web.jpg"
@@ -69,6 +70,6 @@ module Retail
     end
 
     def smashwords_url book
-        "https://www.smashwords.com/books/view/#{book.ebook.smashwords}"
+        "https://www.smashwords.com/books/view/#{book.ebook.smashwords}?ref=#{SMASHWORDS_AFFILIATE_ID}"
     end
 end
