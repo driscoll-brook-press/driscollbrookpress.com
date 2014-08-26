@@ -1,6 +1,7 @@
 module Retail
-    AMAZON_AFFILIATE_ID = "driscollbrookpress-20"
-    
+    AMAZON_AFFILIATE_ID = "driscollbrookpress-20"#
+    ITUNES_AFFILIATE_ID = "1l3vpYQ"
+
     def cover_url book
         "/images/#{File.basename book.slug, '.html'}-cover-web.jpg"
     end
@@ -8,12 +9,16 @@ module Retail
     def ebook_links book
         links = []
         return [] unless book.ebook
-        links <<= ibooks_link(book) if book.ebook.ibooks
+        links <<= itunes_link(book) if book.ebook.ibooks
         links <<= kindle_link(book) if book.ebook.kindle
         links <<= kobo_link(book) if book.ebook.kobo
         links <<= nook_link(book) if book.ebook.nook
         links <<= smashwords_link(book) if book.ebook.smashwords
         links
+    end
+
+    def book_link title, url
+        "<a href='#{url}'>#{title}</a>"
     end
 
     def paperback_links book
@@ -24,23 +29,23 @@ module Retail
     end
 
     def amazon_link book
-        link_to 'Amazon', asin_url(isbn10(book.paperback.isbn))
+        book_link 'Amazon', amazon_affiliate_url(isbn10(book.paperback.isbn))
     end
 
-    def asin_url asin
-        "http://amazon.com/dp/#{asin}/?tag=#{AMAZON_AFFILIATE_ID}"
+    def amazon_affiliate_url identifier
+        "http://amazon.com/dp/#{identifier}?tag=#{AMAZON_AFFILIATE_ID}"
     end
 
-    def ibooks_link book
-        link_to 'iBooks', ibooks_url(book)
+    def itunes_link book
+        book_link 'iBooks', itunes_affiliate_url(book)
     end
 
-    def ibooks_url book
-        "https://itunes.apple.com/us/book/id#{book.ebook.ibooks}?mt=11"
+    def itunes_affiliate_url book
+        "https://itunes.apple.com/us/book/id#{book.ebook.ibooks}?mt=11&at=#{ITUNES_AFFILIATE_ID}"
     end
 
     def kindle_link book
-        link_to 'Kindle', asin_url(book.ebook.kindle)
+        book_link 'Kindle', amazon_affiliate_url(book.ebook.kindle)
     end
 
     def kobo_link book
