@@ -13,7 +13,7 @@ paperback:
 ebook:
   price: $2.99
   isbn: 13
-  ibooks: 912075802
+  ibooks: yes
   kindle: B00MZ8Y9AW
   kobo: double-or-nothing-18
   smashwords: 469642

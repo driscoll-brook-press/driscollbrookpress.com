@@ -41,7 +41,7 @@ module Retail
     end
 
     def itunes_affiliate_url book
-        "https://itunes.apple.com/us/book/id#{book.ebook.ibooks}?mt=11&at=#{ITUNES_AFFILIATE_ID}"
+        "https://itunes.apple.com/us/book/isbn#{isbn13(book.ebook.isbn)}?mt=11&at=#{ITUNES_AFFILIATE_ID}"
     end
 
     def kindle_link book

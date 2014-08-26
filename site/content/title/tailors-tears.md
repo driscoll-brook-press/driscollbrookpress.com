@@ -13,7 +13,7 @@ paperback:
 ebook:
   price: $2.99
   isbn: 1
-  ibooks: 871945048
+  ibooks: yes
   kindle: B00J45LIZ8
   kobo: tailor-s-tears
   nook: 2940149439843

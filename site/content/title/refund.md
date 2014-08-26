@@ -13,7 +13,7 @@ paperback:
 ebook:
   price: $2.99
   isbn: 3
-  ibooks: 873299433
+  ibooks: yes
   kindle: B00IZRZWGC
   kobo: refund
   nook: 2940149439850

@@ -13,7 +13,7 @@ paperback:
 ebook:
   price: $2.99
   isbn: 6
-  ibooks: 877044101
+  ibooks: yes
   kindle: B00K98A46S
   kobo: yantriel-s-privy
   nook: 2940149439898

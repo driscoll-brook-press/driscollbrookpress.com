@@ -13,7 +13,7 @@ paperback:
 ebook:
   price: $2.99
   isbn: 4
-  ibooks: 873369962
+  ibooks: yes
   kindle: B00JDZJ6L2 
   kobo: funhouse-10
   nook: 2940149439881

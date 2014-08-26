@@ -13,7 +13,7 @@ paperback:
 ebook:
   price: $2.99
   isbn: 2
-  ibooks: 873284950
+  ibooks: yes
   kindle: B00J6PVMOI
   kobo: carrion-road
   nook: 2940149439867
