@@ -1,14 +1,48 @@
 ---
 title: The Last Whiskey Bacon Cheddar Burger at Saint Florian's Abbey
+sort: Last Whiskey Bacon Cheddar Burger at Saint Florian's Abbey, The
 date: 2014/03/03
+
+art: Garuti | Dreamstime.com
+
 available: no
+pubdate: October 13, 2014
 
 paperback:
+  isbn: 14
   price: $4.99
+  pages: 32
   amazon: no
 
 ebook:
   price: $2.99
+  isbn: 15
+#  ibooks: yes
+#  kindle: 
+#  kobo: 
+#  smashwords:
+#  nook:
 
 ---
+Freshly released from his seven year sentence in Folsom State Prison,
+Jake Abbot craves the one thing he missed most
+about the outside world:
+A whiskey bacon cheddar burger
+from Saint Florian's Abbey,
+the best burger joint in Sacramento.
 
+But traffic and a greedy cabbie
+conspire to keep Jake from satisfying his hunger.
+
+And when he finally arrives at Saint Florian's,
+Jake's crimes comes back to haunt him.
+
+Now,
+pushed to the limit,
+unable to escape his past,
+Jake must decide
+just how far he will go
+for one good burger.
+
+A short crime story
+from [Dale Hartley Emery](http://dalehartleyemery.com/).
