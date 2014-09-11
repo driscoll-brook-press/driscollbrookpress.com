@@ -11,25 +11,23 @@ pubdate: October 13, 2014
 paperback:
   isbn: 14
   price: $4.99
-  pages: 32
+  pages: 38
   amazon: no
 
 ebook:
   price: $2.99
   isbn: 15
 #  ibooks: yes
-#  kindle: 
+  kindle: B00NI5CR0A
 #  kobo: 
-#  smashwords:
+  smashwords: 475542
 #  nook:
 
 ---
-Freshly released from his seven year sentence in Folsom State Prison,
-Jake Abbot craves the one thing he missed most
-about the outside world:
+Fresh out of Folsom State Prison,
+Jake Abbot craves one thing:
 A whiskey bacon cheddar burger
-from Saint Florian's Abbey,
-the best burger joint in Sacramento.
+from Saint Florian's Abbey.
 
 But traffic and a greedy cabbie
 conspire to keep Jake from satisfying his hunger.
