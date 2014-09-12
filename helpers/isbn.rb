@@ -1,5 +1,3 @@
-#!/usr/bin/env ruby
-
 module ISBN
     BOOKLAND = "978"
     PUBLISHER_GROUP = "1"
