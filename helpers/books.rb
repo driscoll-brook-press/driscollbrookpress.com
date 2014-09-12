@@ -11,7 +11,7 @@ module Books
         end
 
         def new_releases()
-            @books.select{|book| book.new?}
+            @books.select{|book| book.new_release?}
         end
 
         def coming_soon()
@@ -33,7 +33,7 @@ module Books
             end
         end
 
-        def new?
+        def new_release?
             @availability == 'new'
         end
 
