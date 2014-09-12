@@ -1,7 +1,7 @@
 ---
 title: Funhouse
 date: 2014/03/31
-available: yes
+availability: now
 pubdate: 2014/03/31
 
 paperback:

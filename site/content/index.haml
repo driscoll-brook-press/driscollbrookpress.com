@@ -3,6 +3,6 @@ title: New from Driscoll Brook Press
 layout: article
 ---
 
-- catalog = Catalog.new(page_articles).new_releases
+- catalog = Catalog.new(page_articles).new_releases.sort_by{|book| book.pubdate}.reverse
 = partial "layouts/catalog", locals: { catalog: catalog}
 

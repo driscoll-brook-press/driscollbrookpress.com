@@ -5,8 +5,7 @@ date: 2014/03/03
 
 art: Garuti | Dreamstime.com
 
-available: no
-soon: yes
+availability: soon
 pubdate: 2014/10/13
 
 paperback:

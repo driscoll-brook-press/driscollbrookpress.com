@@ -7,15 +7,15 @@ module Books
         end
 
         def available()
-            @books.select{|book| book.available}
+            @books.select{|book| book.available?}
         end
 
         def new_releases()
-            @books.select{|book| book.new}
+            @books.select{|book| book.new?}
         end
 
         def coming_soon()
-            @books.select{|book| book.soon}
+            @books.select{|book| book.coming_soon?}
         end
 
     end
@@ -31,6 +31,18 @@ module Books
                 self.instance_variable_set("@#{k}", v)
                 self.class.send(:define_method, k, proc{self.instance_variable_get("@#{k}")})
             end
+        end
+
+        def new?
+            @availability == 'new'
+        end
+
+        def available?
+            ['new', 'now'].include? @availability
+        end
+
+        def coming_soon?
+            @availability == 'soon'
         end
 
         def cover_url()

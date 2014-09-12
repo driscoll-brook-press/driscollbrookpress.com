@@ -1,7 +1,7 @@
 ---
 title: Tailor's Tears
 date: 2014/03/19
-available: yes
+availability: now
 pubdate: 2014/03/19
 
 paperback:

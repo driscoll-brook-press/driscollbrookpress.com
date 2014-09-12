@@ -4,7 +4,8 @@ layout: article
 ---
 
 %section.post-list
-  - Catalog.new(page_articles).available.each do|book|
+  - catalog = Catalog.new(page_articles).available
+  - catalog.each do|book|
     - link_to book.url do
       = image_tag book.cover_url, class: 'cover listing'
 

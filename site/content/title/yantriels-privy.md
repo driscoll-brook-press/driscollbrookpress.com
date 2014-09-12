@@ -1,7 +1,7 @@
 ---
 title: Yantriel's Privy
 date: 2014/05/10
-available: yes
+availability: now
 pubdate: 2014/05/10
 
 paperback:

@@ -2,7 +2,7 @@
 title: Carrion Road
 date: 2014/03/22
 pubdate: 2014/03/22
-available: yes
+availability: now
 
 paperback:
   pages: 40

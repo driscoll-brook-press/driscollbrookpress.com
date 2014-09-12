@@ -1,7 +1,7 @@
 ---
 title: Refund
 date: 2014/03/13
-available: yes
+availability: now
 pubdate: 2014/03/13
 
 paperback:

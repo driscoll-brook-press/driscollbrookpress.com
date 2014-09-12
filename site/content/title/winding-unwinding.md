@@ -1,8 +1,7 @@
 ---
 title: Winding Unwinding
 date: 2014/08/05
-available: yes
-new: yes
+availability: new
 pubdate: 2014/08/11
 
 paperback:

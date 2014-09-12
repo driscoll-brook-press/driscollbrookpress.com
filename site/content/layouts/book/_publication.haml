@@ -1,6 +1,6 @@
 %h2 Publication Details
 
--if book.available
+-if book.available?
   %p= "Published #{book.pubdate}"
 -elsif book.pubdate
   %p= "Coming #{book.pubdate}"

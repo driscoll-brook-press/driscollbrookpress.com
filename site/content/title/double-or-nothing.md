@@ -1,8 +1,7 @@
 ---
 title: Double or Nothing
 date: 2014/08/05
-available: no
-soon: yes
+availability: new
 pubdate: 2014/09/15
 
 paperback:
