@@ -17,9 +17,9 @@ paperback:
 ebook:
   price: $2.99
   isbn: 15
-#  ibooks: yes
+  ibooks: yes
   kindle: B00NI5CR0A
-#  kobo: 
+  kobo: the-last-whiskey-bacon-cheddar-burger-at-saint-florian-s-abbey
   smashwords: 475542
 #  nook:
 
