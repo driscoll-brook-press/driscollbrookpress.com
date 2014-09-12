@@ -1,8 +1,9 @@
+- catalog = Catalog.new(blog.articles)
 - link_to cover_link do
   = image_tag book.cover_url, class: 'cover wrapped'
 = partial "layouts/book/header", locals: {book: book}
-= partial "layouts/book/description", locals: {book: book}
+= partial "layouts/book/description", locals: {book: book, catalog: catalog}
 = partial "layouts/book/retail", locals: {book: book}
-= partial "layouts/book/publication", locals: {book: book}
+= partial "layouts/book/publication", locals: {book: book, catalog: catalog}
 
 

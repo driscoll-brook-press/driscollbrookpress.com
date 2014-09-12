@@ -6,6 +6,11 @@ module Books
             end
         end
 
+        def find(slug)
+            puts "Looking for book with slug #{slug}"
+            @books.select{|book| book.slug == slug}.first
+        end
+
         def available()
             @books.select{|book| book.available?}
         end
@@ -47,6 +52,10 @@ module Books
 
         def cover_url()
            "/images/#{@slug}-cover-web.jpg"
+        end
+
+        def link
+            link_to @title, url
         end
 
         def url

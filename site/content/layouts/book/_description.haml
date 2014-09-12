@@ -2,6 +2,7 @@
   = book.description
   -if book.stories
     %h2 Contents
-    - book.stories.each do |story|
-      %div #{title_link(story)}
+    - book.stories.each do |slug|
+      - story = catalog.find(slug)
+      %div #{link_to story.title, story.url}
     %p Each story is also available as a standalone book.

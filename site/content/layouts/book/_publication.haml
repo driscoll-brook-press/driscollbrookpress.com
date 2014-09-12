@@ -24,5 +24,6 @@
 -if book.collections
   %h2  Collections
   %p This story and others also appear in:
-  - book.collections.each do |collection|
-    %div #{title_link(collection)}
+  - book.collections.each do |slug|
+    - collection = catalog.find(slug)
+    %div #{link_to collection.title, collection.url}
