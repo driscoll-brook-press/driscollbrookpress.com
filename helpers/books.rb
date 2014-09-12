@@ -50,6 +50,10 @@ module Books
             @availability == 'soon'
         end
 
+        def publication_date()
+            Date.parse(@pubdate).strftime("%B %-d, %Y")
+        end
+
         def cover_url()
            "/images/#{@slug}-cover-web.jpg"
         end

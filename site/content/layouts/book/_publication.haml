@@ -1,9 +1,9 @@
 %h2 Publication Details
 
 -if book.available?
-  %p= "Published #{book.pubdate}"
+  %p= "Published #{book.publication_date}"
 -elsif book.pubdate
-  %p= "Coming #{book.pubdate}"
+  %p= "Coming #{book.publication_date}"
 
 -paperback = book.paperback
 %p
