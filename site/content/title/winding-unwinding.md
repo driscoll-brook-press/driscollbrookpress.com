@@ -2,7 +2,8 @@
 title: Winding Unwinding
 date: 2014/08/05
 available: yes
-pubdate: August 11, 2014
+new: yes
+pubdate: 2014/08/11
 
 paperback:
   price: $10.99

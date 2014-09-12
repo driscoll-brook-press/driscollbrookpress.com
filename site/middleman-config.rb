@@ -15,4 +15,5 @@ $middleman.set :haml, { ugly: true }
 require "helpers/retail.rb"
 require "helpers/isbn.rb"
 require "helpers/titles.rb"
-$middleman.helpers Retail, ISBN, Titles
+require "helpers/books.rb"
+$middleman.helpers Retail, ISBN, Titles, Books

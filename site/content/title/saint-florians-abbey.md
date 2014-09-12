@@ -6,7 +6,8 @@ date: 2014/03/03
 art: Garuti | Dreamstime.com
 
 available: no
-pubdate: October 13, 2014
+soon: yes
+pubdate: 2014/10/13
 
 paperback:
   isbn: 14

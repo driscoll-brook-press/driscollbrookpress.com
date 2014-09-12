@@ -1,8 +1,8 @@
 ---
 title: Refund
 date: 2014/03/13
-available: true
-pubdate: March 13, 2014
+available: yes
+pubdate: 2014/03/13
 
 paperback:
   pages: 56
