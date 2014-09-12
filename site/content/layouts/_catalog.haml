@@ -1,0 +1,4 @@
+%section.post-list
+  - catalog.each do |book|
+    %article.post
+      = partial "layouts/book/full", locals: {book: book, cover_link: book.url}

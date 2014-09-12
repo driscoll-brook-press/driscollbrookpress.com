@@ -2,12 +2,5 @@
 title: Coming Soon From Driscoll Brook Press
 layout: article
 ---
-%section.post-list
-  - Catalog.new(page_articles).coming_soon.each do|book|
-    %article.post
-      = partial "layouts/book/full", locals: { book: book }
-
-
-
-
-
+- catalog = Catalog.new(page_articles).coming_soon
+= partial "layouts/catalog", locals: {catalog: catalog}

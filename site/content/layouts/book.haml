@@ -1,4 +1,5 @@
 - wrap_layout :page do
+  - book = Book.new(current_page)
   %article.post-page
-    = partial "layouts/book/full", locals: { book: Book.new(current_page) }
+    = partial "layouts/book/full", locals: { book: book, cover_link: book.cover_url }
 

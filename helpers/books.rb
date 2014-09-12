@@ -24,7 +24,7 @@ module Books
         attr_reader :description, :slug, :title
 
         def initialize(post)
-            @slug = post.slug
+            @slug = File.basename post.slug, '.html'
             @title = post.title
             @description = post.body
             post.data.each do |k,v|
@@ -33,16 +33,12 @@ module Books
             end
         end
 
-        def link
-            link_to(@name, @url)
-        end
-
         def cover_url()
-           "/images/#{File.basename @slug, '.html'}-cover-web.jpg"
+           "/images/#{@slug}-cover-web.jpg"
         end
 
         def url
-            "/title/#{@slug}"
+            "/title/#{@slug}/"
         end
     end
 end

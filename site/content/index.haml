@@ -2,12 +2,7 @@
 title: New from Driscoll Brook Press
 layout: article
 ---
-%section.post-list
-  - Catalog.new(page_articles).new_releases.each do|book|
-    %article.post
-      = partial "layouts/book/full", locals: { book: book }
 
-
-
-
+- catalog = Catalog.new(page_articles).new_releases
+= partial "layouts/catalog", locals: { catalog: catalog}
 
