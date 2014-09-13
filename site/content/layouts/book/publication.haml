@@ -1,0 +1,23 @@
+%section.publication
+  %h1 Publication Details
+
+  -if book.available?
+    %p= "Published #{book.publication_date}"
+  -elsif book.pubdate
+    %p= "Coming #{book.publication_date}"
+
+  -paperback = book.paperback
+  %p
+    Paperback #{paperback.price}
+    -if paperback.isbn
+      | #{isbn10(paperback.isbn, '-')}
+      | #{isbn13(paperback.isbn, '-')}
+    -if paperback.pages
+      | #{paperback.pages} pages
+
+  -ebook = book.ebook
+  %p
+    Ebook #{ebook.price}
+    -if ebook.isbn
+      | #{isbn10(ebook.isbn, '-')}
+      | #{isbn13(ebook.isbn, '-')}

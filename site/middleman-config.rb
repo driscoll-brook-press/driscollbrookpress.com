@@ -2,7 +2,7 @@ $middleman.activate :blog do |blog|
     blog.sources = $site['book_pattern']
     blog.default_extension = ".md"
 
-    blog.layout = "book"
+    blog.layout = "book/page"
     blog.permalink = "title/:title"
 
     blog.paginate = false
@@ -13,7 +13,6 @@ $middleman.activate :directory_indexes
 $middleman.set :haml, { ugly: true }
 
 require "helpers/retail.rb"
-require "helpers/isbn.rb"
 require "helpers/books.rb"
 
-$middleman.helpers Retail, ISBN, Books
+$middleman.helpers Retail, Books

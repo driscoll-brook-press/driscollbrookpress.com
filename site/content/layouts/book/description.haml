@@ -1,0 +1,19 @@
+%section.description
+  = book.cover_link
+  = book.description
+
+-if book.stories
+  %section.see-also
+    %h1 Contents
+    - book.stories.each do |slug|
+      - story = catalog.find(slug)
+      %div #{link_to story.title, story.url}
+    %p Each story is also available as a standalone book.
+
+-if book.collections
+  %section.see-also
+    %h1 Collections
+    %p This story and others also appear in:
+    - book.collections.each do |slug|
+      - collection = catalog.find(slug)
+      %div #{link_to collection.title, collection.url}

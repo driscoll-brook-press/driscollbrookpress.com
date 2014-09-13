@@ -1,0 +1,3 @@
+%div.articles
+  - catalog.each do |book|
+    = partial "layouts/book/article", locals: {book: book, cover_link: book.url}

@@ -1,0 +1,8 @@
+%article.book
+  - catalog = Catalog.new(blog.articles)
+  = partial "layouts/book/header", locals: {book: book}
+  = partial "layouts/book/description", locals: {book: book, catalog: catalog}
+  = partial "layouts/book/retail", locals: {book: book}
+  = partial "layouts/book/publication", locals: {book: book, catalog: catalog}
+
+

@@ -4,5 +4,5 @@ layout: article
 ---
 
 - catalog = Catalog.new(page_articles).new_releases.sort_by{|book| book.pubdate}.reverse
-= partial "layouts/catalog", locals: { catalog: catalog}
+= partial "layouts/catalog/articles", locals: { catalog: catalog}
 

@@ -3,9 +3,6 @@ title: Available Now From Driscoll Brook Press
 layout: article
 ---
 
-%section.post-list
-  - catalog = Catalog.new(page_articles).available
-  - catalog.each do|book|
-    - link_to book.url do
-      = image_tag book.cover_url, class: 'cover listing'
+- catalog = Catalog.new(page_articles).available
+= partial "layouts/catalog/covers", locals: {catalog: catalog}
 

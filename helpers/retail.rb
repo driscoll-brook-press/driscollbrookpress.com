@@ -1,11 +1,9 @@
+require_relative 'links'
+
 module Retail
     AMAZON_AFFILIATE_ID = "driscollbrookpress-20"#
     ITUNES_AFFILIATE_ID = "1l3vpYQ"
     SMASHWORDS_AFFILIATE_ID = "dalehartleyemery"
-
-    def cover_url book
-        "/images/#{File.basename book.slug, '.html'}-cover-web.jpg"
-    end
 
     def ebook_links book
         links = []
@@ -18,10 +16,6 @@ module Retail
         links
     end
 
-    def book_link title, url
-        "<a href='#{url}'>#{title}</a>"
-    end
-
     def paperback_links book
         links = []
         return links unless book.paperback
@@ -30,7 +24,7 @@ module Retail
     end
 
     def amazon_link book
-        book_link 'Amazon', amazon_affiliate_url(isbn10(book.paperback.isbn))
+        link 'Amazon', amazon_affiliate_url(isbn10(book.paperback.isbn))
     end
 
     def amazon_affiliate_url identifier
@@ -38,7 +32,7 @@ module Retail
     end
 
     def itunes_link book
-        book_link 'iBooks', itunes_affiliate_url(book)
+        link 'iBooks', itunes_affiliate_url(book)
     end
 
     def itunes_affiliate_url book
@@ -46,11 +40,11 @@ module Retail
     end
 
     def kindle_link book
-        book_link 'Kindle', amazon_affiliate_url(book.ebook.kindle)
+        link 'Kindle', amazon_affiliate_url(book.ebook.kindle)
     end
 
     def kobo_link book
-        link_to 'Kobo', kobo_url(book)
+        link 'Kobo', kobo_url(book)
     end
 
     def kobo_url book
@@ -58,7 +52,7 @@ module Retail
     end
 
     def nook_link book
-        link_to 'Nook', nook_url(book)
+        link 'Nook', nook_url(book)
     end
 
     def nook_url book
@@ -66,7 +60,7 @@ module Retail
     end
 
     def smashwords_link book
-        link_to 'Smashwords', smashwords_url(book)
+        link 'Smashwords', smashwords_url(book)
     end
 
     def smashwords_url book
