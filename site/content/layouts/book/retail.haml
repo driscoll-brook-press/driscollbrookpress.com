@@ -1,5 +1,6 @@
 - links = paperback_links(book) + ebook_links(book)
 - if !links.empty?
   %section.retail
-    %h1= book.available? ? 'Buy' : 'Preorder'
+    %header
+      %h1  Buy
     %p= links.join(" | ")

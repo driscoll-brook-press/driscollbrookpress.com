@@ -1,5 +1,5 @@
 - wrap_layout :page do
   - book = Book.new(current_page)
   %div.book-page
-    = partial "layouts/book/article", locals: { book: book, cover_link: book.cover_url }
+    = partial "layouts/book/description", locals: { book: book, cover_link: book.cover_link_to_cover_image }
 

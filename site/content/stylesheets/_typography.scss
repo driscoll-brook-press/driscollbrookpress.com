@@ -1,14 +1,11 @@
 @import 'base/typography';
 
-.book-page {
-    .book {
-        header {
-            h1 { color: blue; }
-            h2 { color: green; }
-        }
-        section {
-            h1 { color: red; }
-        }
-    }
+.book-header {
+    background-color: $chrome-color;
+    border: 1px solid $site-color;
+    h2 { color: $site-color; }
 }
 
+.book section {
+    header h1 { color: $site-color; }
+}

@@ -1,10 +1,8 @@
 %section.publication
-  %h1 Publication Details
+  %header
+    %h1 Publication Details
 
-  -if book.available?
-    %p= "Published #{book.publication_date}"
-  -elsif book.pubdate
-    %p= "Coming #{book.publication_date}"
+  %p= "Publication Date: #{book.publication_date}"
 
   -paperback = book.paperback
   %p

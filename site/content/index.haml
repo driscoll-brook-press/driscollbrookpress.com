@@ -1,8 +1,8 @@
 ---
-title: New from Driscoll Brook Press
+title: New Releases
 layout: article
 ---
 
 - catalog = Catalog.new(page_articles).new_releases.sort_by{|book| book.pubdate}.reverse
-= partial "layouts/catalog/articles", locals: { catalog: catalog}
+= partial "layouts/catalog/descriptions", locals: { catalog: catalog}
 

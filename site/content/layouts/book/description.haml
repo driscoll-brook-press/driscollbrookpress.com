@@ -1,19 +1,7 @@
-%section.description
-  = book.cover_link_to_cover_image
-  = book.description
-
--if book.stories
-  %section.see-also
-    %h1 Contents
-    - book.stories.each do |slug|
-      - story = catalog.find(slug)
-      %div #{link_to story.title, story.url}
-    %p Each story is also available as a standalone book.
-
--if book.collections
-  %section.see-also
-    %h1 Collections
-    %p This story and others also appear in:
-    - book.collections.each do |slug|
-      - collection = catalog.find(slug)
-      %div #{link_to collection.title, collection.url}
+%article.book
+  - catalog = Catalog.new(blog.articles)
+  = partial "layouts/book/header", locals: {book: book}
+  = partial "layouts/book/blurb", locals: {book: book, cover_link: cover_link}
+  = partial "layouts/book/see-also", locals: {book: book, catalog: catalog}
+  = partial "layouts/book/retail", locals: {book: book}
+  = partial "layouts/book/publication", locals: {book: book}

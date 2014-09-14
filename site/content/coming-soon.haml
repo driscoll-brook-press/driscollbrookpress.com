@@ -1,6 +1,6 @@
 ---
-title: Coming Soon From Driscoll Brook Press
+title: Coming Soon
 layout: article
 ---
 - catalog = Catalog.new(page_articles).coming_soon.sort_by{|book| book.pubdate}
-= partial "layouts/catalog/articles", locals: {catalog: catalog}
+= partial "layouts/catalog/descriptions", locals: {catalog: catalog}

@@ -28,12 +28,12 @@ module Books
     end
 
     class Book
-        attr_reader :description, :slug, :title, :url
+        attr_reader :blurb, :slug, :title, :url
 
         def initialize(post)
             @slug = File.basename post.slug, '.html'
             @title = post.title
-            @description = post.body
+            @blurb = post.body
             @url = post.url
             post.data.each do |k,v|
                 self.instance_variable_set("@#{k}", v)
