@@ -8,4 +8,5 @@ author:
   name: Dale Hartley Emery
   email: dale@dalehartleyemery.com
 modules:
+- dale.site.style
 - site
