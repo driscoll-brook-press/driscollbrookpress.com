@@ -1,4 +1,28 @@
-@import 'base/layout';
+
+body {
+    max-width: 40em;
+    margin: 0 auto;
+}
+
+#banner {
+    text-align: center;
+    padding: 1.5em;
+    h1 { padding: .2em; }
+}
+
+#navigation-bar {
+    padding: .5em;
+}
+
+#main {
+    padding: 2em;
+}
+
+#footer {
+    clear: both;
+    padding: 1em;
+    text-align: center;
+}
 
 .blurb {
     img {
@@ -12,9 +36,9 @@
     img { width: 30%; }
 }
 
-.book-header { padding: .5em 1em; }
+.book > header { padding: .5em 1em; }
 
-.book section {
+section {
     margin-top: 1em;
 }
 

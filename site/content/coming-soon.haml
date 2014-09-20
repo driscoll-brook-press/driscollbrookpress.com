@@ -1,6 +1,6 @@
 ---
 title: Coming Soon
-layout: article
+layout: site-page
 ---
 - catalog = Catalog.new(page_articles).coming_soon.sort_by{|book| book.pubdate}
-= partial "layouts/catalog/descriptions", locals: {catalog: catalog}
+= partial 'layouts/descriptions', locals: {catalog: catalog}

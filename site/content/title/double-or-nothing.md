@@ -17,7 +17,7 @@ ebook:
   kindle: B00MZ8Y9AW
   kobo: double-or-nothing-18
   smashwords: 469642
-#  nook: 
+  nook: 2940150713611
 
 ---
 

@@ -1,8 +1,8 @@
 ---
 title: Available Now
-layout: article
+layout: site-page
 ---
 
 - catalog = Catalog.new(page_articles).available
-= partial "layouts/catalog/covers", locals: {catalog: catalog}
+= partial 'layouts/covers', locals: {catalog: catalog}
 
