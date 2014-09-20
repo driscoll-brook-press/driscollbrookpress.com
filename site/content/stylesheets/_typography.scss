@@ -1,6 +1,6 @@
 $text-font: $main-font-family;
 
-$base-text-size: 100%;
+$base-text-size: 16px;
 
 $body-text-size: 1rem;
 
@@ -29,7 +29,6 @@ html {
     background-color: $page-background-color;
     font-family: $text-font;
     font-size: $base-text-size;
-    -webkit-text-size-adjust: 200%;
 }
 
 body {

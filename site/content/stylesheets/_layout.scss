@@ -1,6 +1,5 @@
 
 body {
-    max-width: 40em;
     margin: 0 auto;
 }
 
@@ -29,6 +28,7 @@ body {
         float: right;
         margin: 0 0 2em 2em;
         width: 40%;
+        max-width: 300px;
     }
 }
 
@@ -36,7 +36,10 @@ body {
     img { width: 30%; }
 }
 
-.book > header { padding: .5em 1em; }
+.book > header {
+    clear: both;
+    padding: .5em 1em;
+}
 
 section {
     margin-top: 1em;
