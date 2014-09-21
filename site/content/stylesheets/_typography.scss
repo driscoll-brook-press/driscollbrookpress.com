@@ -140,3 +140,4 @@ blockquote {
 
 section > header h1 { @include text-size($section-heading-size); }
 
+.nobreak { white-space: nowrap; }
