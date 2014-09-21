@@ -4,7 +4,8 @@ $base-text-size: 16px;
 
 $body-text-size: 1rem;
 
-$banner-title-size: 2rem;
+$banner-title-size: 2.25rem;
+$banner-subtitle-size: 1.5rem;
 
 $navigation-text-size: 1rem;
 
@@ -44,6 +45,7 @@ body {
         @include text-size($banner-title-size);
         a { @include plain-links($banner-text-color); }
     }
+    h2 { @include text-size($banner-subtitle-size); }
 }
 
 #navigation-bar {
@@ -68,7 +70,6 @@ body {
     color: $content-text-color;
     h1, h2 {
         font-weight: bold;
-        text-transform: capitalize;
         color: $site-color;
     }
 }
