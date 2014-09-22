@@ -1,20 +1,20 @@
 -if book.stories
-  %section.see-also
+  %section.contents
     %p
       %strong= book.title
       includes these stories:
-    %ul
+    %ul.book-list
       - book.stories.each do |slug|
         - story = catalog.find(slug)
         %li= story.title_link 
     %p Each story is also available as a standalone book.
 
 -if book.collections
-  %section.see-also
+  %section.collected-in
     %p
       %strong= book.title
       also appears with other fine stories in:
-    %ul
+    %ul.book-list
       - book.collections.each do |slug|
         - collection = catalog.find(slug)
         %li= collection.title_link

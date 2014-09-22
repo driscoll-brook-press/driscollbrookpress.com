@@ -1,61 +1,50 @@
 
 body {
     margin: 0 auto;
+    article {
+        h1, h2 { margin: 0; }
+    }
 }
 
-#banner {
-    text-align: center;
-    padding: 1.5em;
-    h1 { padding: .2em; }
+body > article > * {
+    margin-left: 2em;
+    margin-right: 2em;
 }
 
-#navigation-bar {
-    padding: .5em;
+body > article > header {
+    margin-left: 0;
+    margin-right: 0;
 }
 
-#main {
-    padding: 2em;
-}
+article, nav, #footer { clear: both; }
 
-#footer {
-    clear: both;
-    padding: 1em;
-    text-align: center;
-}
+nav, #footer { padding: .5em; } 
+
+img { width: 300px; }
 
 .blurb {
     img {
         float: right;
         margin: 0 0 2em 2em;
-        width: 40%;
-        max-width: 300px;
     }
 }
 
-.covers {
-    img { width: 30%; }
-}
-
-.book > header {
-    clear: both;
-    padding: .5em 1em;
-}
-
-section {
-    margin-top: 1em;
-}
-
-.see-also {
-    ul { margin: 1em, 0; }
+ul {
+    margin: 1em, 0;
     li { margin: 0; }
 }
 
-.descriptions {
-    .book {
-        margin-top: 4em;
-        &:first-child { margin-top: 2em; }
-    }
+p, ul, ol, li, blockquote {
+    margin: 1em auto;
 }
 
-.covers { margin-top: 2em; }
+ul, ol, blockquote { margin-left: 2em; }
+
+blockquote {
+    margin-right: 2em;
+    padding: 1em;
+    p {
+        &:last-child { margin-bottom: 0; }
+    }
+}
 

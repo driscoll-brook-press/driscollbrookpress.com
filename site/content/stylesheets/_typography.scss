@@ -1,86 +1,47 @@
 $text-font: $main-font-family;
 
-$base-text-size: 16px;
+$text-size: 16px;
 
-$body-text-size: 1rem;
+$heading-1-size: 3rem;
+$heading-2-size: 2.25rem;
+$heading-3-size: 1.5rem;
 
-$banner-title-size: 2.25rem;
-$banner-subtitle-size: 1.5rem;
+$leading: 1.3;
 
-$navigation-text-size: 1rem;
-
-$page-title-size: 2rem;
-$book-title-size: 1.5rem ;
-$book-author-size: 1.3 ;
-$section-heading-size: 1.5rem ;
-
-$leading: 130%;
-
-@mixin plain-links($color) {
-    @include link-colors($color, $color, $color, $color, $color);
-    @include hover-link;
-}
-
-@mixin text-size($size) {
-    font-size: $size;
+html {
+    font-family: $text-font;
+    font-size: $text-size;
+    -webkit-text-size-adjust: 200%;
     line-height: $leading;
 }
 
-html {
-    background-color: $page-background-color;
-    font-family: $text-font;
-    font-size: $base-text-size;
-    -webkit-text-size-adjust: 200%;
+h1, h2 { font-weight: normal; }
+
+article > header {
+    padding: 1em;
+    h1 { font-size: $heading-1-size; }
+    h2 { font-size: $heading-2-size; }
 }
 
-body {
-    background-color: $content-background-color;
-    @include text-size($body-text-size);
+article article > header {
+    h1 { font-size: $heading-2-size; }
+    h2 { font-size: $heading-3-size; }
 }
 
-#banner {
-    background-color: $banner-background-color;
-    color: $banner-text-color;
-    h1 {
-        @include text-size($banner-title-size);
-        a { @include plain-links($banner-text-color); }
-    }
-    h2 { @include text-size($banner-subtitle-size); }
+section > header {
+    h1 { font-size: $heading-3-size; }
 }
 
-#navigation-bar {
-    border-bottom: 1px solid $navigation-trim-color;
-    background-color: $navigation-background-color;
-    color: $navigation-text-color;
-    @include text-size($navigation-text-size);
-    text-align: center;
-    ul {
-        display: inline;
-        color: $navigation-trim-color;
-        @include delimited-list(" |");
-        a {
-            font-weight: bold;
-            color: $navigation-text-color;
-            @include plain-links($navigation-text-color);
-        }
-    }
+
+article > header { text-align: center; }
+
+nav ul {
+    display: inline;
+    @include delimited-list(" |");
+    a { font-weight: bold; }
 }
 
-#main {
-    color: $content-text-color;
-    h1, h2 {
-        font-weight: bold;
-        color: $site-color;
-    }
-}
-
-#footer {
-    border-top: 1px solid $footer-trim-color;
-    background-color: $footer-background-color;
-    color: $footer-text-color;
-}
-
-strong { font-weight: bold; }
+nav, #footer { text-align: center; }
 
 em {
     font-style: italic;
@@ -92,33 +53,11 @@ em {
     }
 }
 
-a {
-    @include plain-links($site-link-text-color);
-}
-
-p, ul, ol, li, blockquote {
-    margin-top: 1em;
-    margin-bottom: 1em;
-    &:first-child { margin-top: 0; }
-    &:last-child { margin-bottom: 0; }
-}
-
-ol, ul, blockquote {
-    margin-left: 2em;
-}
-
 ol { list-style-type: decimal; }
 ul { list-style-type: disc; }
 
 blockquote {
-    background-color: $blockquote-background-color;
-    border: 1px solid $blockquote-trim-color;
-    margin-right: 2em;
-    padding: 1em;
-    p {
-        font-style: italic;
-        &:last-child { margin-bottom: 0; }
-    }
+    p { font-style: italic; }
     em {
         font-style: normal;
         em {
@@ -130,15 +69,5 @@ blockquote {
     }
 }
 
-.site-page > header h1 { @include text-size($page-title-size); }
-
-.book > header {
-    background-color: $chrome-color;
-    border: 1px solid $site-color;
-    h1 { @include text-size($book-title-size); }
-    h2 { @include text-size($book-author-size); }
-}
-
-section > header h1 { @include text-size($section-heading-size); }
-
 .nobreak { white-space: nowrap; }
+

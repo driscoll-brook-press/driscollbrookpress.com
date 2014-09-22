@@ -1,0 +1,7 @@
+- wrap_layout :page do
+  %article.static
+    %header
+      %h1
+        %a{href: current_page.url} #{current_page.data.title} #{data.site.title}
+    = yield
+

@@ -1,8 +1,8 @@
 ---
-title: New Releases From
-layout: site-page
+title: New Releases
+layout: page
 ---
 
 - catalog = Catalog.new(page_articles).new_releases.sort_by{|book| book.pubdate}.reverse
-= partial 'layouts/descriptions', locals: { catalog: catalog}
+= partial 'layouts/catalog', locals: { catalog: catalog}
 

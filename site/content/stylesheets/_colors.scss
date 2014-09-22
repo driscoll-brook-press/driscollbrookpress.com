@@ -1,31 +1,56 @@
-$site-color: rgb(0%, 40%, 40%) !default;
+$site-color: rgb(0%, 40%, 40%);
 
-$trim-color: scale-saturation(scale-lightness($site-color, 50), -80) !default;
-$chrome-color: scale-saturation(scale-lightness($site-color, 90), -90) !default;
-$content-background-color: scale-saturation(scale-lightness($site-color, 98), -90) !default;
+$dark: $site-color;
+$medium: scale-saturation(scale-lightness($site-color, 50), -80);
+$light: scale-saturation(scale-lightness($site-color, 90), -90);
+$lightest: scale-saturation(scale-lightness($site-color, 98), -90);
 
-$page-background-color: $trim-color !default;
-$site-link-text-color: $site-color !default;
+@mixin plain-links($color) {
+    @include link-colors($color, $color, $color, $color, $color);
+    @include hover-link;
+}
 
-$banner-background-color: $site-color !default;
-$banner-text-color: $content-background-color !default;
+@mixin heading-color($color) {
+    h1, h2 { color: $color; }
+    a { @include plain-links($color); }
+}
 
-$navigation-text-color: $site-color !default;
-$navigation-trim-color: $trim-color !default;
-$navigation-background-color: $chrome-color !default;
+html {
+    background-color: $lightest;
+}
 
-$content-text-color: black !default;
-$content-link-color: $site-color !default;
-$content-link-background-color: $content-background-color !default;
+body {
+    color: black;
+    article {
+        & > header {
+            background-color: $dark;
+            @include heading-color($light);
+        }
+        article {
+            & > header {
+                border: 1px solid $medium;
+                background-color: $light;
+                @include heading-color($dark);
+            }
+        }
+    }
+}
 
-$sidebar-text-color: $site-color !default;
-$sidebar-background-color: $chrome-color !default;
-$sidebar-trim-color: $trim-color !default;
+nav, #footer {
+    border: 1px solid $medium;
+    background-color: $light;
+    color: $medium;
+    ul {
+        a { @include plain-links($dark); }
+    }
+}
 
-$footer-text-color: $trim-color !default;
-$footer-trim-color: $trim-color !default;
-$footer-background-color: $chrome-color !default;
+h1, h2 { color: $dark; }
 
-$blockquote-background-color: $chrome-color !default;
-$blockquote-trim-color: $trim-color !default;
+a { @include plain-links($dark); }
+
+blockquote {
+    background-color: $light;
+    border: 1px solid $medium;
+}
 
