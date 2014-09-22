@@ -17,22 +17,21 @@ $lightest: scale-saturation(scale-lightness($site-color, 98), -90);
 
 html {
     background-color: $lightest;
+    color: black;
 }
 
-body {
-    color: black;
-    article {
-        & > header {
-            background-color: $dark;
-            @include heading-color($light);
-        }
-        article {
-            & > header {
-                border: 1px solid $medium;
-                background-color: $light;
-                @include heading-color($dark);
-            }
-        }
+article {
+    & > header {
+        background-color: $dark;
+        @include heading-color($light);
+    }
+}
+
+article.book {
+    & > header {
+        border: 1px solid $medium;
+        background-color: $light;
+        @include heading-color($dark);
     }
 }
 

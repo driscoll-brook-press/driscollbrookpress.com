@@ -1,19 +1,8 @@
 
-body {
-    margin: 0 auto;
-    article {
-        h1, h2 { margin: 0; }
-    }
-}
+body { margin: 0 auto; }
 
-body > article > * {
-    margin-left: 2em;
-    margin-right: 2em;
-}
-
-body > article > header {
-    margin-left: 0;
-    margin-right: 0;
+.content, .book {
+    margin: 2em;
 }
 
 article, nav, #footer { clear: both; }
@@ -22,12 +11,12 @@ nav, #footer { padding: .5em; }
 
 img { width: 300px; }
 
-.blurb {
-    img {
-        float: right;
-        margin: 0 0 2em 2em;
-    }
+.blurb img {
+    float: right;
+    margin: 0 0 2em 2em;
 }
+
+h1, h2 { margin: 0; }
 
 ul {
     margin: 1em, 0;
