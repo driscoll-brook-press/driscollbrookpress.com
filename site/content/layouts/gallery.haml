@@ -1,6 +1,7 @@
 - wrap_layout :page do
-  %article.static
+  %article.gallery
     = partial 'layouts/page-title'
     = partial 'layouts/navigation'
-    = yield
+    - catalog.each do |book|
+      = book.cover_link
 

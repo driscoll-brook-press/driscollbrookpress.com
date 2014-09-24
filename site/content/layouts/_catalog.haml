@@ -1,4 +1,0 @@
-%article.catalog
-  = partial 'layouts/page-title'
-  - catalog.each do |book|
-    = partial 'layouts/description', locals: {book: book, cover_link: book.cover_link}
