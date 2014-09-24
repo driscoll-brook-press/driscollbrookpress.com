@@ -1,7 +1,7 @@
+- catalog = Catalog.new(page_articles).send(current_page.data.include)
+
 - wrap_layout :page do
   %article.gallery
-    = partial 'layouts/page-title'
-    = partial 'layouts/navigation'
     - catalog.each do |book|
-      = book.cover_link
+      = partial 'layouts/cover', locals: {cover_link: book.cover_link}
 

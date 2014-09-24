@@ -10,43 +10,37 @@ $lightest: scale-saturation(scale-lightness($site-color, 98), -90);
     @include hover-link;
 }
 
-@mixin heading-color($color) {
-    h1, h2 { color: $color; }
-    a { @include plain-links($color); }
-}
+h1, h2 { color: $dark; }
+a { @include plain-links($dark); }
 
 html {
-    background-color: $lightest;
+    background-color: $light;
     color: black;
 }
 
-article {
-    & > header {
-        background-color: $dark;
-        @include heading-color($light);
-    }
+body {
+    background-color: $lightest;
+    border: 1px solid $light;
 }
 
-article.book {
-    & > header {
-        border: 1px solid $medium;
-        background-color: $light;
-        @include heading-color($dark);
-    }
+body > header {
+    h1, h2 { color: $light; }
+    background-color: $dark;
+    a { @include plain-links($light); }
 }
 
-nav, #footer {
+body > article {
     border: 1px solid $medium;
+}
+
+article + article {
+    border-top: 1px solid $dark;
+}
+
+nav, footer {
     background-color: $light;
     color: $medium;
-    ul {
-        a { @include plain-links($dark); }
-    }
 }
-
-h1, h2 { color: $dark; }
-
-a { @include plain-links($dark); }
 
 blockquote {
     background-color: $light;

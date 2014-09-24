@@ -1,5 +1,10 @@
 - catalog = Catalog.new(blog.articles)
-= partial 'layouts/blurb', locals: {book: book, cover_link: cover_link}
-= partial 'layouts/see-also', locals: {book: book, catalog: catalog}
-= partial 'layouts/retail', locals: {book: book}
-= partial 'layouts/publication', locals: {book: book}
+
+%article.book
+  = partial 'layouts/cover', locals: {cover_link: cover_link}
+  = partial 'layouts/book-title', locals: {book: book}
+  = partial 'layouts/about', locals: {book: book, cover_link: cover_link}
+  = partial 'layouts/see-also', locals: {book: book, catalog: catalog}
+  = partial 'layouts/retail', locals: {book: book}
+  = partial 'layouts/product', locals: {book: book}
+  %section.clear

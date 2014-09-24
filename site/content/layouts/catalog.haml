@@ -1,8 +1,7 @@
+- catalog = Catalog.new(page_articles).send(current_page.data.include)
+
 - wrap_layout :page do
   %article.catalog
-    = partial 'layouts/page-title'
-    = partial 'layouts/navigation'
     - catalog.each do |book|
-      = partial 'layouts/book-title', locals: {book: book}
       = partial 'layouts/description', locals: {book: book, cover_link: book.cover_link}
 

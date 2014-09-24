@@ -14,26 +14,26 @@ module Books
         end
 
         def available
-            @books.select{|book| book.available?}
+            @books.select{|book| book.available?}.sort_by{|book| book.sort_title}
         end
 
         def new_releases
-            @books.select{|book| book.new_release?}
+            @books.select{|book| book.new_release?}.sort_by{|book| book.pubdate}.reverse
         end
 
         def coming_soon
-            @books.select{|book| book.coming_soon?}
+            @books.select{|book| book.coming_soon?}.sort_by{|book| book.pubdate}
         end
 
     end
 
     class Book
-        attr_reader :blurb, :slug, :title, :url
+        attr_reader :about, :slug, :title, :url
 
         def initialize(post)
             @slug = File.basename post.slug, '.html'
             @title = post.title
-            @blurb = post.body
+            @about = post.body
             @url = post.url
             post.data.each do |k,v|
                 self.instance_variable_set("@#{k}", v)
@@ -63,6 +63,10 @@ module Books
 
         def cover_link_to_cover_image
             link cover_image, cover_url
+        end
+
+        def sort_title
+            sort || title
         end
 
         def title_link
