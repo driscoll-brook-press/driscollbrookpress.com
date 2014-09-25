@@ -21,9 +21,11 @@ article + article {
 .cover { img { width: 100%; } }
 
 .gallery {
+    text-align: center;
     .cover {
         display: inline-block;
-        width: 30%;
+        width: 15rem;
+        margin: 5px;
     }
 }
 
