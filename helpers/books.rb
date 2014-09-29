@@ -1,5 +1,3 @@
-require_relative 'links'
-
 module Books
 
     class Catalog
