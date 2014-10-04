@@ -26,7 +26,7 @@ ebook:
 ---
 Fresh out of Folsom State Prison,
 Jake Abbot craves one thing:
-A whiskey bacon cheddar burger
+A thick, hot, juicy whiskey bacon cheddar burger
 from Saint Florian's Abbey.
 
 But traffic and a greedy cabbie
