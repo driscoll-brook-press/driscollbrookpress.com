@@ -12,7 +12,7 @@ paperback:
   isbn: 14
   price: $4.99
   pages: 38
-  amazon: no
+  amazon: yes
 
 ebook:
   price: $2.99
@@ -21,7 +21,7 @@ ebook:
   kindle: B00NI5CR0A
   kobo: the-last-whiskey-bacon-cheddar-burger-at-saint-florian-s-abbey
   smashwords: 475542
-#  nook:
+  nook: 2940150464759
 
 ---
 Fresh out of Folsom State Prison,
