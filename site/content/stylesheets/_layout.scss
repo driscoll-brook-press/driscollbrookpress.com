@@ -20,8 +20,9 @@ article + article {
 
 .cover { img { width: 100%; } }
 
+.centered { text-align: center; }
+
 .gallery {
-    text-align: center;
     .cover {
         display: inline-block;
         width: 15rem;

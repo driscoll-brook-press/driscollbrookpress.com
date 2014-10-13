@@ -1,7 +1,11 @@
 - catalog = Catalog.new(page_articles).send(current_page.data.include)
 
 - wrap_layout :page do
-  %article.catalog
-    - catalog.each do |book|
-      = partial 'layouts/description', locals: {book: book, cover_link: book.cover_link}
+  - if catalog.empty?
+    .centered
+      = yield
+  - else
+    %article.catalog
+      - catalog.each do |book|
+        = partial 'layouts/description', locals: {book: book, cover_link: book.cover_link}
 
