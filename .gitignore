@@ -1,4 +1,2 @@
-/source
-/build
-/nginx
-/.bundle
+/.bundle/
+/build/

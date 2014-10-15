@@ -1,0 +1,11 @@
+- selection = catalog.send(current_page.data.include)
+
+- wrap_layout :page do
+  - if selection.empty?
+    .centered
+      = yield
+  - else
+    %article.catalog
+      - selection.each do |book|
+        = partial 'layouts/description', locals: {book: book, cover_link: book.cover_link}
+

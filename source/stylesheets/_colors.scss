@@ -1,0 +1,49 @@
+$site-color: rgb(0%, 40%, 40%);
+
+$dark: $site-color;
+$medium: scale-saturation(scale-lightness($site-color, 50), -80);
+$light: scale-saturation(scale-lightness($site-color, 90), -90);
+$lightest: scale-saturation(scale-lightness($site-color, 98), -90);
+
+@mixin plain-links($color) {
+    @include link-colors($color, $color, $color, $color, $color);
+    @include hover-link;
+}
+
+h1, h2 { color: $dark; }
+a { @include plain-links($dark); }
+
+html {
+    background-color: $light;
+    color: black;
+}
+
+body {
+    background-color: $lightest;
+    border: 1px solid $light;
+}
+
+body > header {
+    h1, h2 { color: $light; }
+    background-color: $dark;
+    a { @include plain-links($light); }
+}
+
+body > article {
+    border: 1px solid $medium;
+}
+
+article + article {
+    border-top: 1px solid $dark;
+}
+
+nav, footer {
+    background-color: $light;
+    color: $medium;
+}
+
+blockquote {
+    background-color: $light;
+    border: 1px solid $medium;
+}
+
