@@ -1,1 +1,1 @@
-set path=,,site/**,diddleman/**,helpers,data
+set path=**

@@ -1,6 +1,6 @@
 module Books
   def catalog
-    @titles ||= $middleman.sitemap.resources.select{|r| r.path.start_with? 'title/'}
+    @titles ||= sitemap.resources.select{|r| r.path.start_with? 'title/'}
     Catalog.new @titles
   end
 
@@ -13,30 +13,19 @@ module Books
     end
 
     def find(slug)
-      puts "Finding by slug: #{slug}"
-      @books.each{|book| puts "  #{book.title} slug: #{book.slug}"}
       @books.select{|book| book.slug == slug}.first
     end
 
     def available
-      puts "Looking for available"
-      found = @books.select{|book| book.available?}.sort_by{|book| book.sort_title}
-      found.each{|book| puts "   #{book.title}"}
-      found
+      @books.select{|book| book.available?}.sort_by{|book| book.sort_title}
     end
 
     def new_releases
-      puts "Looking for new releases"
-      found = @books.select{|book| book.new_release?}.sort_by{|book| book.pubdate}.reverse
-      found.each{|book| puts "   #{book.title}"}
-      found
+      @books.select{|book| book.new_release?}.sort_by{|book| book.pubdate}.reverse
     end
 
     def coming_soon
-      puts "Looking for coming soon"
-      found = @books.select{|book| book.coming_soon?}.sort_by{|book| book.pubdate}
-      found.each{|book| puts "   #{book.title}"}
-      found
+      @books.select{|book| book.coming_soon?}.sort_by{|book| book.pubdate}
     end
   end
 

@@ -1,11 +1,8 @@
-$middleman = self
-#$debug = true
+site = OpenStruct.new(YAML::load_file(File.join('data', 'site.yaml')))
 
-# Delegate to diddleman's middleman-config.rb file
-load File.join('diddleman', 'middleman-config.rb')
+Time.zone = site['timezone']
 
 activate :directory_indexes
-
-set :haml, { ugly: true }
-
+set :haml, {ugly: true}
 helpers
+
