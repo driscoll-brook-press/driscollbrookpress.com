@@ -1,8 +1,7 @@
 ---
 title: Tailor's Tears
-date: 2014/03/19
+date: 2014-03-19
 availability: now
-pubdate: 2014/03/19
 
 paperback:
   price: $4.99

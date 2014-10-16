@@ -1,12 +1,11 @@
 ---
 title: The Last Whiskey Bacon Cheddar Burger at Saint Florian's Abbey
 sort: Last Whiskey Bacon Cheddar Burger at Saint Florian's Abbey, The
-date: 2014/03/03
 
 art: Garuti | Dreamstime.com
 
 availability: new
-pubdate: 2014/10/13
+date: 2014-10-13
 
 paperback:
   isbn: 14

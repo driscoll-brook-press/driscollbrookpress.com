@@ -1,7 +1,6 @@
 ---
 title: Carrion Road
-date: 2014/03/22
-pubdate: 2014/03/22
+date: 2014-03-22
 availability: now
 
 paperback:

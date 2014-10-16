@@ -1,37 +1,42 @@
 module Books
   def catalog
-    @titles ||= sitemap.resources.select{|r| r.path.start_with? 'title/'}
-    Catalog.new @titles
+    @titles ||= sitemap.resources.select{ |resource| resource.path.start_with? 'title/' }
+    @catalog ||= Catalog.new @titles
   end
-
 
   class Catalog
     def initialize(pages)
-      @books = pages.map do |book|
-        Book.new(book)
-      end
+      @books = pages.map { |page| Book.new(page) }
     end
 
     def find(slug)
-      @books.select{|book| book.slug == slug}.first
+      @books.select{ |book| book.slug == slug }.first
     end
 
     def available
-      @books.select{|book| book.available?}.sort_by{|book| book.sort_title}
+      @books.select{ |book| book.available? }.sort_by{ |book| book.sort_title }
     end
 
     def new_releases
-      @books.select{|book| book.new_release?}.sort_by{|book| book.pubdate}.reverse
+      @books.select{ |book| book.new_release? }.sort_by{ |book| book.date }.reverse
     end
 
     def coming_soon
-      @books.select{|book| book.coming_soon?}.sort_by{|book| book.pubdate}
+      @books.select{ |book| book.coming_soon? }.sort_by{ |book| book.date }
     end
   end
 
   class Book
-    def initialize(resource)
-      @resource = resource
+    def initialize(page)
+      @page = page
+    end
+
+    def slug
+      File.basename(@page.path, '.html')
+    end
+
+    def about
+      @page.render({ layout: false })
     end
 
     def method_missing(meth, *args, &block)
@@ -39,23 +44,7 @@ module Books
     end
 
     def property(name)
-      option(name) || page_property(name)
-    end
-
-    def option(name)
-      metadata(:options, name.to_sym)
-    end
-
-    def page_property(name)
-      metadata(:page, name)
-    end
-
-    def slug
-      File.basename(@resource.path, '.html')
-    end
-
-    def metadata group, name
-      @resource.metadata[group][name]
+      @page.metadata[:page][name]
     end
 
     def new_release?
@@ -87,15 +76,15 @@ module Books
     end
 
     def url
-      "/title/#{slug}/"
+      "/title/#{ slug }/"
     end
 
     def cover_image
-      "<img src='#{cover_url}' />"
+      "<img src='#{ cover_url }' />"
     end
 
     def cover_url
-      "/images/#{slug}-cover-web.jpg"
+      "/images/#{ slug }-cover-web.jpg"
     end
   end
 end

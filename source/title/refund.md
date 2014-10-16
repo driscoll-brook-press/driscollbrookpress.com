@@ -1,8 +1,7 @@
 ---
 title: Refund
-date: 2014/03/13
+date: 2014-03-13
 availability: now
-pubdate: 2014/03/13
 
 paperback:
   pages: 56

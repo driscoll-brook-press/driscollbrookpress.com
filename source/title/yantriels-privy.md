@@ -1,8 +1,7 @@
 ---
 title: Yantriel's Privy
-date: 2014/05/10
+date: 2014-05-10
 availability: now
-pubdate: 2014/05/10
 
 paperback:
   price: $4.99
