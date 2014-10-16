@@ -1,6 +1,6 @@
 - selection = catalog.send(current_page.data.include)
 
-- wrap_layout :page do
+= wrap_layout :page do
   - if selection.empty?
     .centered
       = yield
