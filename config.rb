@@ -7,6 +7,7 @@ set :layout, :book
 set :haml, {ugly: true}
 
 activate :deploy do |deploy|
+  deploy.build_before = true
   deploy.method = :rsync
   deploy.host   = host.domain
   deploy.user   = host.user
