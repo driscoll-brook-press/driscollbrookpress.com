@@ -1,7 +1,7 @@
 ---
 title: Available Now
-layout: gallery
-include: available
-
 ---
 
+%article.gallery.centered
+  - catalog.available.each do |book|
+    = partial 'layouts/cover', locals: {cover_link: book.cover_link}

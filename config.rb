@@ -3,7 +3,9 @@ site = OpenStruct.new(YAML::load_file(File.join('data', 'site.yaml')))
 
 Time.zone = site.timezone
 
-set :layout, :book
+set :layout, :page
+page "/title/*", layout: :book
+
 set :haml, {ugly: true}
 
 activate :deploy do |deploy|

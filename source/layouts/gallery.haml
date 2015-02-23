@@ -1,7 +1,0 @@
-- selection = catalog.send(current_page.data.include)
-
-= wrap_layout :page do
-  %article.gallery.centered
-    - selection.each do |book|
-      = partial 'layouts/cover', locals: {cover_link: book.cover_link}
-
