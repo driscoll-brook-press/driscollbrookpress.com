@@ -7,7 +7,7 @@ paperback:
   price: $4.99
   pages: 29
   isbn: 16
-  amazon: no
+  amazon: yes
 
 ebook:
   price: $2.99
