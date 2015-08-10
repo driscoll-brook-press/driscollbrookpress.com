@@ -5,7 +5,7 @@ availability: soon
 
 paperback:
   price: $4.99
-  pages: xx
+  pages: 15
   isbn: 18
   amazon: no
 
