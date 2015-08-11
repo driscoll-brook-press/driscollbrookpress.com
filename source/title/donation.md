@@ -1,7 +1,7 @@
 ---
 title: The Donation
 date: 2015-08-11
-availability: soon
+availability: new
 
 paperback:
   price: $4.99
