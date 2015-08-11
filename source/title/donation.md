@@ -15,7 +15,7 @@ ebook:
   ibooks: yes
   kindle: B012LSHEO8
   kobo: the-donation-4
-#  nook: 2940149439881
+  nook: 2940151147286
   smashwords: 563623
 ---
 
