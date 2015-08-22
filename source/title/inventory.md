@@ -15,7 +15,7 @@ ebook:
   ibooks: yes
   kindle: B013OA36I0
   kobo: inventory-6
-  nook: 1122541238
+  nook: 2940152285772
   smashwords: 567809
 ---
 
