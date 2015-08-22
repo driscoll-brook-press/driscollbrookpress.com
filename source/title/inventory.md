@@ -12,11 +12,11 @@ paperback:
 ebook:
   price: $2.99
   isbn: 19
-#  ibooks: yes
-#  kindle: B012LSHEO8
-#  kobo: the-donation-4
-#  nook: 2940149439881
-#  smashwords: 563623
+  ibooks: yes
+  kindle: B013OA36I0
+  kobo: inventory-6
+  nook: 1122541238
+  smashwords: 567809
 ---
 
 Curtis Poole's estranged daughter dies, leaving him with fading memories of her and vivid memories of his actions that carved the decade-long rift in their relationship.
