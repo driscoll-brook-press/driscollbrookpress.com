@@ -14,9 +14,9 @@ ebook:
   isbn: 13
   ibooks: yes
   kindle: B00MZ8Y9AW
-  kobo: double-or-nothing-18
-  smashwords: 469642
-  nook: 2940150713611
+  kobo: yes
+#  nook: 2940150713611
+  smashwords: yes
 
 ---
 

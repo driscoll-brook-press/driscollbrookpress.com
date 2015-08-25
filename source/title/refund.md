@@ -15,8 +15,8 @@ ebook:
   ibooks: yes
   kindle: B00IZRZWGC
   kobo: refund
-  nook: 2940149439850
-  smashwords: 425125
+#  nook: 2940149439850
+  smashwords: yes
 
 collections:
   - winding-unwinding
@@ -26,11 +26,11 @@ collections:
 When Geoff Palmenter demands a refund from a master negotiator,
 he expects an impossible negotiation.
 Instead,
-he wins far more than he bargained for: 
+he wins far more than he bargained for:
 
-A second chance at love. 
+A second chance at love.
 
-And with second chances, timing is everything. 
+And with second chances, timing is everything.
 
 A time travel short story from
 [Dale Hartley Emery](http://dalehartleyemery.com/).

@@ -8,16 +8,16 @@ paperback:
   pages: 130
   isbn: 10
   amazon: yes
-#  createspace: 
+#  createspace:
 
 ebook:
   price: $5.99
   isbn: 11
   ibooks: yes
   kindle: B00MG65WQ8
-  kobo: winding-unwinding
-  nook: 2940149653751
-  smashwords: 464822
+  kobo: yes
+#  nook: 2940149653751
+  smashwords: yes
 
 stories:
   - tailors-tears
@@ -44,4 +44,3 @@ and something worse.
 
 Peek through the keyhole into these five fantastic stories from
 [Dale Hartley Emery](http://dalehartleyemery.com/).
-

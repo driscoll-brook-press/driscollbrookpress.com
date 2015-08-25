@@ -14,9 +14,9 @@ ebook:
   isbn: 6
   ibooks: yes
   kindle: B00K98A46S
-  kobo: yantriel-s-privy
-  nook: 2940149439898
-  smashwords: 436954
+  kobo: yes
+#  nook: 2940149439898
+  smashwords: yes
 
 collections:
   - winding-unwinding
@@ -41,4 +41,3 @@ His family.
 
 A creepy fantasy short story from
 [Dale Hartley Emery](http://dalehartleyemery.com/).
-

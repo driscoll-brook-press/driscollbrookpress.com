@@ -14,9 +14,9 @@ ebook:
   isbn: 17
   ibooks: yes
   kindle: B012LSHEO8
-  kobo: the-donation-4
-  nook: 2940151147286
-  smashwords: 563623
+  kobo: yes
+#  nook: 2940151147286
+  smashwords: yes
 ---
 
 On a busy street corner in the searing heat of a Sacramento July afternoon,

@@ -14,9 +14,9 @@ ebook:
   isbn: 19
   ibooks: yes
   kindle: B013OA36I0
-  kobo: inventory-6
+  kobo: yes
   nook: 2940152285772
-  smashwords: 567809
+  smashwords: yes
 ---
 
 Curtis Poole's estranged daughter dies, leaving him with fading memories of her and vivid memories of his actions that carved the decade-long rift in their relationship.

@@ -13,9 +13,9 @@ ebook:
   price: $2.99
   isbn: 4
   ibooks: yes
-  kindle: B00JDZJ6L2 
-  kobo: funhouse-10
-  nook: 2940149439881
+  kindle: B00JDZJ6L2
+  kobo: yes
+#  nook: 2940149439881
   smashwords: 424764
 
 collections:
@@ -29,12 +29,11 @@ watch in horror as a zombie eats their friend.
 Now they must work together,
 one supplying the wits,
 the other supplying the blood,
-to find the doors to escape. 
- 
+to find the doors to escape.
+
 But an even greater danger awaits,
-and the search for the door becomes a race for survival. 
- 
+and the search for the door becomes a race for survival.
+
 A horrifying, heartwarming story
 about zombies and brotherly love
 from [Dale Hartley Emery](http://dalehartleyemery.com).
-

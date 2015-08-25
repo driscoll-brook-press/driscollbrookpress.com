@@ -18,9 +18,9 @@ ebook:
   isbn: 15
   ibooks: yes
   kindle: B00NI5CR0A
-  kobo: the-last-whiskey-bacon-cheddar-burger-at-saint-florian-s-abbey
-  smashwords: 475542
-  nook: 2940150464759
+  kobo: yes
+#  nook: 2940150464759
+  smashwords: yes
 
 ---
 Fresh out of Folsom State Prison,

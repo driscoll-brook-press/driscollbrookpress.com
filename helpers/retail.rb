@@ -28,6 +28,14 @@ def amazon_affiliate_url identifier
     "http://amazon.com/dp/#{identifier}?tag=#{AMAZON_AFFILIATE_ID}"
 end
 
+def bn_link book
+    link 'B&amp;N', bn_url(book)
+end
+
+def bn_url book
+    "http://www.barnsandnoble.com/s/#{isbn13(book.ebook.isbn)}"
+end
+
 def itunes_link book
     link 'iBooks', itunes_affiliate_url(book)
 end
@@ -45,7 +53,7 @@ def kobo_link book
 end
 
 def kobo_url book
-    "http://store.kobobooks.com/en-US/ebook/#{book.ebook.kobo}"
+    "http://store.kobobooks.com/Search/Query?fcmedia=Book&query=#{isbn13(book.ebook.isbn)}"
 end
 
 def nook_link book
@@ -61,5 +69,5 @@ def smashwords_link book
 end
 
 def smashwords_url book
-    "https://www.smashwords.com/books/view/#{book.ebook.smashwords}?ref=#{SMASHWORDS_AFFILIATE_ID}"
+  "https://www.smashwords.com/books/search?query=#{isbn13(book.ebook.isbn)}&ref=#{SMASHWORDS_AFFILIATE_ID}"
 end

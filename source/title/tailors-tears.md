@@ -14,9 +14,9 @@ ebook:
   isbn: 1
   ibooks: yes
   kindle: B00J45LIZ8
-  kobo: tailor-s-tears
-  nook: 2940149439843
-  smashwords: 425129
+  kobo: yes
+#  nook: 2940149439843
+  smashwords: yes
 
 collections:
  - winding-unwinding
