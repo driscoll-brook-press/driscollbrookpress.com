@@ -1,5 +1,6 @@
 ---
 title: The Donation
+sort: Donation, The
 date: 2015-08-11
 availability: new
 
@@ -17,6 +18,7 @@ ebook:
   kindle: B012LSHEO8
   kobo: yes
   nook: 2940152283709
+  oyster: Y6Qg9rWriuSvogFy42JR7F
   scribd: 275247971
   smashwords: yes
 ---

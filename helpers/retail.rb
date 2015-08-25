@@ -10,6 +10,7 @@ def ebook_links book
     links <<= kindle_link(book) if book.ebook.kindle
     links <<= kobo_link(book) if book.ebook.kobo
     links <<= nook_link(book) if book.ebook.nook
+    links <<= oyster_link(book) if book.ebook.oyster
     links <<= scribd_link(book) if book.ebook.scribd
     links <<= smashwords_link(book) if book.ebook.smashwords
     links
@@ -73,6 +74,14 @@ end
 
 def nook_url book
     "http://www.barnsandnoble.com/s/#{book.ebook.nook}"
+end
+
+def oyster_link book
+  link 'Oyster', oyster_url(book)
+end
+
+def oyster_url book
+  "https://www.oysterbooks.com/book/#{book.ebook.oyster}/"
 end
 
 def scribd_link book

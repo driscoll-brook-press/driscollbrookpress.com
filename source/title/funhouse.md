@@ -17,6 +17,7 @@ ebook:
   kindle: B00JDZJ6L2
   kobo: yes
   nook: 2940152290912
+  oyster: vHMFHkVXinBFnkec56RVqM
   scribd: 275801758
   smashwords: 424764
 

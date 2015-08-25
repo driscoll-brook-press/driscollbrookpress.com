@@ -17,6 +17,7 @@ ebook:
   kindle: B00IZRZWGC
   kobo: refund
   nook: 2940152256475
+  oyster: B8RCAWRfzXcQjhCxAbTUiA
   scribd: 275814516
   smashwords: yes
 
