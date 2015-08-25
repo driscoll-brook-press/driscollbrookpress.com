@@ -6,6 +6,7 @@ def ebook_links book
     links = []
     return [] unless book.ebook
     links <<= itunes_link(book) if book.ebook.ibooks
+    links <<= inktera_link(book) if book.ebook.inktera
     links <<= kindle_link(book) if book.ebook.kindle
     links <<= kobo_link(book) if book.ebook.kobo
     links <<= nook_link(book) if book.ebook.nook
@@ -36,6 +37,14 @@ end
 
 def bn_url book
     "http://www.barnsandnoble.com/s/#{isbn13(book.paperback.isbn)}"
+end
+
+def inktera_link book
+  link 'Inktera', inktera_url(book)
+end
+
+def inktera_url book
+  "http://www.inktera.com/store/title/#{book.ebook.inktera}"
 end
 
 def itunes_link book

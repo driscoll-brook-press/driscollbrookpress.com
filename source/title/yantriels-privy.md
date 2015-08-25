@@ -13,6 +13,7 @@ ebook:
   price: $2.99
   isbn: 6
   ibooks: yes
+  inktera: 0994c220-b4af-47a0-9bc4-aaa0cc79403e
   kindle: B00K98A46S
   kobo: yes
   nook: 2940152314526
