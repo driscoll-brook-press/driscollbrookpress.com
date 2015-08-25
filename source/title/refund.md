@@ -15,7 +15,7 @@ ebook:
   ibooks: yes
   kindle: B00IZRZWGC
   kobo: refund
-#  nook: 2940149439850
+  nook: 2940152256475
   scribd: 275814516
   smashwords: yes
 

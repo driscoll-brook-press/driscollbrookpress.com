@@ -15,7 +15,7 @@ ebook:
   ibooks: yes
   kindle: B012LSHEO8
   kobo: yes
-#  nook: 2940151147286
+  nook: 2940152283709
   scribd: 275247971
   smashwords: yes
 ---
