@@ -8,7 +8,6 @@ paperback:
   price: $4.99
   isbn: 5
   amazon: yes
-  bn: yes
 
 ebook:
   price: $2.99
@@ -17,6 +16,7 @@ ebook:
   kindle: B00J6PVMOI
   kobo: yes
 #  nook: 2940149439867
+  scribd: 275229309
   smashwords: yes
 
 collections:

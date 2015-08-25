@@ -20,6 +20,7 @@ ebook:
   kindle: B00NI5CR0A
   kobo: yes
 #  nook: 2940150464759
+  scribd: 275778689
   smashwords: yes
 
 ---

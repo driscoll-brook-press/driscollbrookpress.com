@@ -8,7 +8,7 @@ paperback:
   pages: 130
   isbn: 10
   amazon: yes
-#  createspace:
+  bn: yes
 
 ebook:
   price: $5.99
@@ -17,6 +17,7 @@ ebook:
   kindle: B00MG65WQ8
   kobo: yes
 #  nook: 2940149653751
+  scribd: 275814506
   smashwords: yes
 
 stories:
