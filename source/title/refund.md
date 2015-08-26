@@ -7,19 +7,21 @@ paperback:
   pages: 56
   price: $4.99
   isbn: 9
-  amazon: yes
 
 ebook:
   price: $2.99
   isbn: 3
-  ibooks: yes
-  inktera: 91654c9f-c4a7-4f03-80ef-e03bb3046c68
-  kindle: B00IZRZWGC
-  kobo: refund
-  nook: 2940152256475
-  oyster: B8RCAWRfzXcQjhCxAbTUiA
-  scribd: 275814516
-  smashwords: yes
+
+offers:
+  - amazon
+  - ibooks
+  - inktera: 91654c9f-c4a7-4f03-80ef-e03bb3046c68
+  - kindle: B00IZRZWGC
+  - kobo
+  - nook: 2940152256475
+  - oyster: B8RCAWRfzXcQjhCxAbTUiA
+  - scribd: 275814516
+  - smashwords
 
 collections:
   - winding-unwinding

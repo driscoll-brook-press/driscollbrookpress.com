@@ -7,19 +7,21 @@ paperback:
   isbn: 12
   pages: 58
   price: $4.99
-  amazon: yes
 
 ebook:
   price: $2.99
   isbn: 13
-  ibooks: yes
-  inktera: 65da842e-6a8c-4514-bfb3-a7b9a5c520f1
-  kindle: B00MZ8Y9AW
-  kobo: yes
-  nook: 2940152298727
-  oyster: 4gwHJeo6cqUce4sDDyCRTG
-  scribd: 275771571
-  smashwords: yes
+
+offers:
+  - amazon
+  - ibooks
+  - inktera: 65da842e-6a8c-4514-bfb3-a7b9a5c520f1
+  - kindle: B00MZ8Y9AW
+  - kobo
+  - nook: 2940152298727
+  - oyster: 4gwHJeo6cqUce4sDDyCRTG
+  - scribd: 275771571
+  - smashwords
 
 ---
 

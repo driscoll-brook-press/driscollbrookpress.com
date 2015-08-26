@@ -1,6 +1,6 @@
 module Books
   def catalog
-    @titles ||= sitemap.resources.select{ |resource| resource.path.start_with? 'title/' }
+    @titles ||= sitemap.resources.select { |resource| resource.path.start_with? 'title/' }
     @catalog ||= Catalog.new @titles
   end
 
@@ -10,19 +10,19 @@ module Books
     end
 
     def find(slug)
-      @books.select{ |book| book.slug == slug }.first
+      @books.find { |book| book.slug == slug }
     end
 
     def available
-      @books.select{ |book| book.available? }.sort_by{ |book| book.sort_title }
+      @books.select(&:available?).sort_by(&:sort_title)
     end
 
     def new_releases
-      @books.select{ |book| book.new_release? }.sort_by{ |book| book.date }.reverse
+      @books.select(&:new_release?).sort_by(&:date).reverse
     end
 
     def coming_soon
-      @books.select{ |book| book.coming_soon? }.sort_by{ |book| book.date }
+      @books.select(&:coming_soon?).sort_by(&:date)
     end
   end
 
@@ -39,7 +39,7 @@ module Books
       @page.render({ layout: false })
     end
 
-    def method_missing(meth, *args, &block)
+    def method_missing(meth, *_args, &_block)
       property meth.to_s
     end
 
@@ -52,7 +52,7 @@ module Books
     end
 
     def available?
-      ['new', 'now'].include? availability
+      %w(new now).include? availability
     end
 
     def coming_soon?
@@ -76,15 +76,15 @@ module Books
     end
 
     def url
-      "/title/#{ slug }/"
+      "/title/#{slug}/"
     end
 
     def cover_image
-      "<img src='#{ cover_url }' />"
+      "<img src='#{cover_url}' />"
     end
 
     def cover_url
-      "/images/#{ slug }-cover-web.jpg"
+      "/images/#{slug}-cover-web.jpg"
     end
   end
 end

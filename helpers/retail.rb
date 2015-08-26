@@ -1,101 +1,74 @@
-AMAZON_AFFILIATE_ID = "driscollbrookpress-20"#
-ITUNES_AFFILIATE_ID = "1l3vpYQ"
-SMASHWORDS_AFFILIATE_ID = "dalehartleyemery"
+module Retail
+  AMAZON_AFFILIATE_ID = 'driscollbrookpress-20'
+  ITUNES_AFFILIATE_ID = '1l3vpYQ'
+  SMASHWORDS_AFFILIATE_ID = 'dalehartleyemery'
 
-def ebook_links book
-    links = []
-    return [] unless book.ebook
-    links <<= itunes_link(book) if book.ebook.ibooks
-    links <<= inktera_link(book) if book.ebook.inktera
-    links <<= kindle_link(book) if book.ebook.kindle
-    links <<= kobo_link(book) if book.ebook.kobo
-    links <<= nook_link(book) if book.ebook.nook
-    links <<= oyster_link(book) if book.ebook.oyster
-    links <<= scribd_link(book) if book.ebook.scribd
-    links <<= smashwords_link(book) if book.ebook.smashwords
-    links
-end
+  AMAZON_URL_TEMPLATE = "http://amazon.com/dp/%s?tag=#{AMAZON_AFFILIATE_ID}"
+  BN_URL_TEMPLATE = 'http://www.barnsandnoble.com/s/%s'
+  IBOOKS_URL_TEMPLATE = "https://itunes.apple.com/us/book/isbn%s?mt=11&at=#{ITUNES_AFFILIATE_ID}"
+  INKTERA_URL_TEMPLATE = 'http://www.inktera.com/store/title/%s'
+  KOBO_URL_TEMPLATE = 'http://store.kobobooks.com/Search/Query?fcmedia=Book&query=%s'
+  OYSTER_URL_TEMPLATE = 'https://www.oysterbooks.com/book/%s'
+  SCRIBD_URL_TEMPLATE = 'https://www.scribd.com/book/%s'
+  SMASHWORDS_URL_TEMPLATE = "https://www.smashwords.com/books/search?query=%s&ref=#{SMASHWORDS_AFFILIATE_ID}"
 
-def paperback_links book
-    links = []
-    return links unless book.paperback
-    links <<= amazon_link(book) if book.paperback.amazon
-    links <<= bn_link(book) if book.paperback.bn
-    links
-end
+  IDENTIFIED_BY_EBOOK_ISBN13 = lambda { |offer| isbn13(offer.book.ebook.isbn) }
+  IDENTIFIED_BY_PAPERBACK_ISBN10 = lambda { |offer| isbn10(offer.book.paperback.isbn) }
+  IDENTIFIED_BY_PAPERBACK_ISBN13 = lambda { |offer| isbn13(offer.book.paperback.isbn) }
+  IDENTIFIED_BY_STOCK_NUMBER = lambda { |offer| offer.stock_number }
 
-def amazon_link book
-    link 'Amazon', amazon_affiliate_url(isbn10(book.paperback.isbn))
-end
+  class Marketplace
+    def initialize
+      @retailers = {
+        amazon: Retailer.new('Amazon', AMAZON_URL_TEMPLATE, IDENTIFIED_BY_PAPERBACK_ISBN10),
+        bn: Retailer.new('B&amp;N', BN_URL_TEMPLATE, IDENTIFIED_BY_PAPERBACK_ISBN13),
+        ibooks: Retailer.new('iBooks', IBOOKS_URL_TEMPLATE, IDENTIFIED_BY_EBOOK_ISBN13),
+        inktera: Retailer.new('Inktera', INKTERA_URL_TEMPLATE, IDENTIFIED_BY_STOCK_NUMBER),
+        kindle: Retailer.new('Kindle', AMAZON_URL_TEMPLATE, IDENTIFIED_BY_STOCK_NUMBER),
+        kobo: Retailer.new('Kobo', KOBO_URL_TEMPLATE, IDENTIFIED_BY_EBOOK_ISBN13),
+        nook: Retailer.new('Nook', BN_URL_TEMPLATE, IDENTIFIED_BY_STOCK_NUMBER),
+        oyster: Retailer.new('Oyster', OYSTER_URL_TEMPLATE, IDENTIFIED_BY_STOCK_NUMBER),
+        scribd: Retailer.new('Scribd', SCRIBD_URL_TEMPLATE, IDENTIFIED_BY_STOCK_NUMBER),
+        smashwords: Retailer.new('Smashwords', SMASHWORDS_URL_TEMPLATE, IDENTIFIED_BY_EBOOK_ISBN13)
+      }
+    end
 
-def amazon_affiliate_url identifier
-    "http://amazon.com/dp/#{identifier}?tag=#{AMAZON_AFFILIATE_ID}"
-end
+    def retailer(offerer)
+      @retailers[offerer.to_sym]
+    end
+  end
 
-def bn_link book
-    link 'B&amp;N', bn_url(book)
-end
+  class Offer
+    attr_reader :book, :offerer, :stock_number
 
-def bn_url book
-    "http://www.barnsandnoble.com/s/#{isbn13(book.paperback.isbn)}"
-end
+    def initialize(book, details)
+      @book = book
+      if details.is_a? Hash
+        @offerer = details.keys.first
+        @stock_number = details.values.first
+      else
+        @offerer = details
+      end
+    end
+  end
 
-def inktera_link book
-  link 'Inktera', inktera_url(book)
-end
+  class Retailer
+    def initialize(name, url_template, identify_offer)
+      @name = name
+      @url_template = url_template
+      @identify_offer = identify_offer
+    end
 
-def inktera_url book
-  "http://www.inktera.com/store/title/#{book.ebook.inktera}"
-end
+    def link_to(offer)
+      link(@name, @url_template % @identify_offer.call(offer))
+    end
+  end
 
-def itunes_link book
-    link 'iBooks', itunes_affiliate_url(book)
-end
+  MARKETPLACE = Marketplace.new
 
-def itunes_affiliate_url book
-    "https://itunes.apple.com/us/book/isbn#{isbn13(book.ebook.isbn)}?mt=11&at=#{ITUNES_AFFILIATE_ID}"
-end
-
-def kindle_link book
-    link 'Kindle', amazon_affiliate_url(book.ebook.kindle)
-end
-
-def kobo_link book
-    link 'Kobo', kobo_url(book)
-end
-
-def kobo_url book
-    "http://store.kobobooks.com/Search/Query?fcmedia=Book&query=#{isbn13(book.ebook.isbn)}"
-end
-
-def nook_link book
-    link 'Nook', nook_url(book)
-end
-
-def nook_url book
-    "http://www.barnsandnoble.com/s/#{book.ebook.nook}"
-end
-
-def oyster_link book
-  link 'Oyster', oyster_url(book)
-end
-
-def oyster_url book
-  "https://www.oysterbooks.com/book/#{book.ebook.oyster}/"
-end
-
-def scribd_link book
-  link 'Scribd', scribd_url(book)
-end
-
-def scribd_url book
-  "https://www.scribd.com/book/#{book.ebook.scribd}"
-end
-
-def smashwords_link book
-    link 'Smashwords', smashwords_url(book)
-end
-
-def smashwords_url book
-  "https://www.smashwords.com/books/search?query=#{isbn13(book.ebook.isbn)}&ref=#{SMASHWORDS_AFFILIATE_ID}"
+  def retailer_links(book)
+    return [] unless book.offers
+    book.offers.map { |details| Offer.new(book, details) }
+      .map { |offer| MARKETPLACE.retailer(offer.offerer).link_to(offer) }
+  end
 end

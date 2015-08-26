@@ -7,20 +7,22 @@ paperback:
   price: $10.99
   pages: 130
   isbn: 10
-  amazon: yes
-  bn: yes
 
 ebook:
   price: $5.99
   isbn: 11
-  ibooks: yes
-  inktera: 29a20d23-aa0e-4bfb-927f-bd810c372067
-  kindle: B00MG65WQ8
-  kobo: yes
-  nook: 2940152299311
-  oyster: AbWNdKzLshVn5BHxixPLub
-  scribd: 275814506
-  smashwords: yes
+
+offers:
+  - amazon
+  - bn
+  - ibooks
+  - inktera: 29a20d23-aa0e-4bfb-927f-bd810c372067
+  - kindle: B00MG65WQ8
+  - kobo
+  - nook: 2940152299311
+  - oyster: AbWNdKzLshVn5BHxixPLub
+  - scribd: 275814506
+  - smashwords
 
 stories:
   - tailors-tears
