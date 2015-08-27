@@ -2,6 +2,6 @@ exclude: [Gemfile, Gemfile.lock, Readme.md]
 force_polling: true
 host: 0.0.0.0
 collections:
-  titles:
+  books:
     output: true
     permalink: /title/:path/
