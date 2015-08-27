@@ -10,5 +10,5 @@ defaults:
       path: ''
       type: books
     values:
-      layout: page
+      layout: book
       permalink: /title/:path/
