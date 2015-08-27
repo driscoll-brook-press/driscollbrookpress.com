@@ -1,5 +1,7 @@
 ---
 title: Contact
+layout: about
+permalink: /:path/:basename/
 ---
 
 # Email

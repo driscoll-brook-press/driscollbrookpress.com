@@ -1,5 +1,7 @@
 ---
 title: Available Now
+layout: page
+permalink: /:path/:basename/
 ---
 
 {% assign books = site.books | sort: 'title' %}

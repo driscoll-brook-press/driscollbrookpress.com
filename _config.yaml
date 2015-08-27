@@ -4,4 +4,11 @@ host: 0.0.0.0
 collections:
   books:
     output: true
-    permalink: /title/:path/
+defaults:
+  -
+    scope:
+      path: ''
+      type: books
+    values:
+      layout: page
+      permalink: /title/:path/

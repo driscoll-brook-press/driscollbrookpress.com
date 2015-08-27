@@ -1,5 +1,7 @@
 ---
 title: Coming Soon
+layout: page
+permalink: /:path/:basename/
 ---
 
 {% assign upcoming_books = site.books | where: 'availability', 'soon' | sort: 'date' %}
