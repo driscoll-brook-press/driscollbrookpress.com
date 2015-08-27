@@ -3,7 +3,6 @@
   {% include book/title.html book=include.book %}
   {% include book/about.html book=include.book %}
 {% comment %}
-  = partial 'layouts/about', locals: {book: book, cover_link: cover_link}
   = partial 'layouts/see-also', locals: {book: book, catalog: catalog}
   = partial 'layouts/retail', locals: {book: book}
   = partial 'layouts/product', locals: {book: book}
