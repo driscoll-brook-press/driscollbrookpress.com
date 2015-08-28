@@ -9,8 +9,8 @@
   <p>
     Paperback {{ paperback.price }}
     {% if paperback.isbn %}
-    | <span class='nobreak'>{{ paperback.isbn }}</span>
-    | <span class='nobreak'>{{ paperback.isbn }}</span>
+    | <span class='nobreak'>{{ paperback.isbn | isbn10: '-' }}</span>
+    | <span class='nobreak'>{{ paperback.isbn | isbn13: '-' }}</span>
     {% endif %}
     {% if paperback.pages %}
     | <span class='nobreak'>{{ paperback.pages }} pages</span>
@@ -19,8 +19,8 @@
   <p>
     Ebook {{ ebook.price }}
     {% if ebook.isbn %}
-    | <span class='nobreak'>{{ ebook.isbn }}</span>
-    | <span class='nobreak'>{{ ebook.isbn }}</span>
+    | <span class='nobreak'>{{ ebook.isbn  | isbn10: '-' }}</span>
+    | <span class='nobreak'>{{ ebook.isbn  | isbn13: '-' }}</span>
     {% endif %}
   </p>
 </section>
