@@ -3,7 +3,7 @@ title: Available Now
 layout: page
 permalink: /:path/:basename/
 ---
-{% assign books = site.books | sort: 'title' %}
+{% assign books = site.books | available_now %}
 {% for book in books %}
 {% unless book.availability == 'soon' %}
 {% include book/description.html book=book %}
