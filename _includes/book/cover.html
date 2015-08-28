@@ -1,3 +1,5 @@
 <section style='cover'>
-  <img src='/images/{{ include.book.path | split: '/' | last | split: '.' | first }}-cover-web.jpg' />
+  <a href='{{ include.book.url }}'>
+    <img src='/images/{{ include.book.path | split: '/' | last | split: '.' | first }}-cover-web.jpg' />
+  </a>
 </section>

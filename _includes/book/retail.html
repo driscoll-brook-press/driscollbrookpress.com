@@ -1,0 +1,6 @@
+{% if include.book.offers %}
+<section class='retail'>
+  <header><h1>Buy</h1></header>
+  <p>{{ include.book.offers | join: ' | '}}</p>
+</section>
+{% endif %}

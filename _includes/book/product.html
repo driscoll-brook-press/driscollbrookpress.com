@@ -24,12 +24,3 @@
     {% endif %}
   </p>
 </section>
-
-  -ebook = book.ebook
-  %p
-    Ebook #{ebook.price}
-    -if ebook.isbn
-      |
-      %span.nobreak #{isbn10(ebook.isbn, '-')}
-      |
-      %span.nobreak #{isbn13(ebook.isbn, '-')}
