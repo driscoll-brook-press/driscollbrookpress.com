@@ -14,15 +14,15 @@ ebook:
 #  isbn: 19
 
 offers:
-#  - amazon
-#  - ibooks
-#  - inktera:
-#  - kindle:
-#  - kobo
-#  - nook:
-#  - oyster:
-#  - scribd:
-#  - smashwords
+#  amazon:
+#  ibooks:
+#  inktera:
+#  kindle:
+#  kobo:
+#  nook:
+#  oyster:
+#  scribd:
+#  smashwords:
 ---
 
-*Soiled Doves* description.
+Coming soon.

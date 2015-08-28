@@ -3,7 +3,7 @@
   <h3>Buy</h3>
   <p>
     {% for offer in include.book.offers %}
-    {{ include.book | offer_link: offer }}
+    {{ offer | offer_link: include.book }}
     {% unless forloop.last %} | {% endunless %}
     {% endfor %}
   </p>

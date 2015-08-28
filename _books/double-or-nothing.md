@@ -13,15 +13,15 @@ ebook:
   isbn: 13
 
 offers:
-  - amazon
-  - ibooks
-  - inktera: 65da842e-6a8c-4514-bfb3-a7b9a5c520f1
-  - kindle: B00MZ8Y9AW
-  - kobo
-  - nook: 2940152298727
-  - oyster: 4gwHJeo6cqUce4sDDyCRTG
-  - scribd: 275771571
-  - smashwords
+  amazon:
+  ibooks:
+  inktera: 65da842e-6a8c-4514-bfb3-a7b9a5c520f1
+  kindle: B00MZ8Y9AW
+  kobo:
+  nook: 2940152298727
+  oyster: 4gwHJeo6cqUce4sDDyCRTG
+  scribd: 275771571
+  smashwords:
 
 ---
 

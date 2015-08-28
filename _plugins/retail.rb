@@ -12,10 +12,10 @@ module Retail
   SCRIBD_URL_TEMPLATE = 'https://www.scribd.com/book/%s'
   SMASHWORDS_URL_TEMPLATE = "https://www.smashwords.com/books/search?query=%s&ref=#{SMASHWORDS_AFFILIATE_ID}"
 
-  IDENTIFIED_BY_EBOOK_ISBN13 = lambda { |offer| ISBN::CALCULATOR.isbn13(offer.book['ebook']['isbn']) }
-  IDENTIFIED_BY_PAPERBACK_ISBN10 = lambda { |offer| ISBN::CALCULATOR.isbn10(offer.book['paperback']['isbn']) }
-  IDENTIFIED_BY_PAPERBACK_ISBN13 = lambda { |offer| ISBN::CALCULATOR.isbn13(offer.book['paperback']['isbn']) }
-  IDENTIFIED_BY_STOCK_NUMBER = lambda { |offer| offer.stock_number }
+  IDENTIFIED_BY_EBOOK_ISBN13 = lambda { |item| ISBN::CALCULATOR.isbn13(item.book['ebook']['isbn']) }
+  IDENTIFIED_BY_PAPERBACK_ISBN10 = lambda { |item| ISBN::CALCULATOR.isbn10(item.book['paperback']['isbn']) }
+  IDENTIFIED_BY_PAPERBACK_ISBN13 = lambda { |item| ISBN::CALCULATOR.isbn13(item.book['paperback']['isbn']) }
+  IDENTIFIED_BY_STOCK_NUMBER = lambda { |item| item.stock_number }
 
   class Marketplace
     def initialize
@@ -38,37 +38,24 @@ module Retail
     end
   end
 
-  class Offer
-    attr_reader :book, :offerer, :stock_number
-
-    def initialize(book, details)
-      @book = book
-      if details.is_a? Hash
-        @offerer = details.keys.first
-        @stock_number = details.values.first
-      else
-        @offerer = details
-      end
-    end
-  end
-
   class Retailer
-    def initialize(name, url_template, identify_offer)
+    def initialize(name, url_template, identify_item)
       @name = name
       @url_template = url_template
-      @identify_offer = identify_offer
+      @identify_item = identify_item
     end
 
-    def link_to(offer)
-      "<a href='#{@url_template % @identify_offer.call(offer)}'>#{@name}</a>"
+    def link_to(item)
+      "<a href='#{@url_template % @identify_item.call(item)}'>#{@name}</a>"
     end
   end
 
   MARKETPLACE = Marketplace.new
 
-  def offer_link(book, details)
-    offer = Offer.new(book, details)
-    MARKETPLACE.retailer(offer.offerer).link_to(offer)
+  def offer_link(offer, book)
+    retailer_key, stock_number = offer
+    item = OpenStruct.new book: book, stock_number: stock_number
+    MARKETPLACE.retailer(retailer_key).link_to(item)
   end
 end
 

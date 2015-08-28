@@ -13,18 +13,18 @@ ebook:
   isbn: 11
 
 offers:
-  - amazon
-  - bn
-  - ibooks
-  - inktera: 29a20d23-aa0e-4bfb-927f-bd810c372067
-  - kindle: B00MG65WQ8
-  - kobo
-  - nook: 2940152299311
-  - oyster: AbWNdKzLshVn5BHxixPLub
-  - scribd: 275814506
-  - smashwords
+  amazon:
+  bn:
+  ibooks:
+  inktera: 29a20d23-aa0e-4bfb-927f-bd810c372067
+  kindle: B00MG65WQ8
+  kobo:
+  nook: 2940152299311
+  oyster: AbWNdKzLshVn5BHxixPLub
+  scribd: 275814506
+  smashwords:
 
-stories:
+includes:
   - tailors-tears
   - carrion-road
   - refund

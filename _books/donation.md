@@ -14,15 +14,15 @@ ebook:
   isbn: 17
 
 offers:
-  - amazon
-  - ibooks
-  - inktera: aad93190-5b4d-4494-a9c2-cf1e48ce801a
-  - kindle: B012LSHEO8
-  - kobo
-  - nook: 2940152283709
-  - oyster: Y6Qg9rWriuSvogFy42JR7F
-  - scribd: 275247971
-  - smashwords
+  amazon:
+  ibooks:
+  inktera: aad93190-5b4d-4494-a9c2-cf1e48ce801a
+  kindle: B012LSHEO8
+  kobo:
+  nook: 2940152283709
+  oyster: Y6Qg9rWriuSvogFy42JR7F
+  scribd: 275247971
+  smashwords:
 ---
 
 On a busy street corner in the searing heat of a Sacramento July afternoon,

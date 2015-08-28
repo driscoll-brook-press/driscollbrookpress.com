@@ -13,15 +13,15 @@ ebook:
   isbn: 19
 
 offers:
-#  - amazon
-  - ibooks
-#  - inktera:
-  - kindle: B013OA36I0
-  - kobo
-  - nook: 2940152285772
-#  - oyster:
-#  - scribd: 274935744
-  - smashwords
+#  amazon:
+  ibooks:
+#  inktera:
+  kindle: B013OA36I0
+  kobo:
+  nook: 2940152285772
+#  oyster:
+#  scribd: 274935744
+  smashwords:
 ---
 
 Curtis Poole's estranged daughter dies, leaving him with fading memories of her and vivid memories of his actions that carved the decade-long rift in their relationship.

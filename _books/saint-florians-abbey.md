@@ -16,14 +16,14 @@ ebook:
   price: $2.99
   isbn: 15
 offers:
-  - amazon
-  - ibooks
-  - inktera: 3a961b59-84cd-4873-aa00-0b5f290ac3a7
-  - kindle: B00NI5CR0A
-  - kobo
-  - nook: 2940152243420
-  - scribd: 275778689
-  - smashwords
+  amazon:
+  ibooks:
+  inktera: 3a961b59-84cd-4873-aa00-0b5f290ac3a7
+  kindle: B00NI5CR0A
+  kobo:
+  nook: 2940152243420
+  scribd: 275778689
+  smashwords:
 
 ---
 Fresh out of Folsom State Prison,

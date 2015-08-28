@@ -12,17 +12,17 @@ ebook:
   price: $2.99
   isbn: 6
 offers:
-  - amazon
-  - ibooks
-  - inktera: 0994c220-b4af-47a0-9bc4-aaa0cc79403e
-  - kindle: B00K98A46S
-  - kobo
-  - nook: 2940152314526
-  - oyster: mpVARKk46esDUh87FyaSSh
-  - scribd: 275247953
-  - smashwords
+  amazon:
+  ibooks:
+  inktera: 0994c220-b4af-47a0-9bc4-aaa0cc79403e
+  kindle: B00K98A46S
+  kobo:
+  nook: 2940152314526
+  oyster: mpVARKk46esDUh87FyaSSh
+  scribd: 275247953
+  smashwords:
 
-collections:
+included_in:
   - winding-unwinding
 
 ---

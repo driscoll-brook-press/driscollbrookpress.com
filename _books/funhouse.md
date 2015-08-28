@@ -13,17 +13,17 @@ ebook:
   isbn: 4
 
 offers:
-  - amazon
-  - ibooks
-  - inktera: 08ecd9f7-3a91-4459-a597-d16924dd0214
-  - kindle: B00JDZJ6L2
-  - kobo
-  - nook: 2940152290912
-  - oyster: vHMFHkVXinBFnkec56RVqM
-  - scribd: 275801758
-  - smashwords
+  amazon:
+  ibooks:
+  inktera: 08ecd9f7-3a91-4459-a597-d16924dd0214
+  kindle: B00JDZJ6L2
+  kobo:
+  nook: 2940152290912
+  oyster: vHMFHkVXinBFnkec56RVqM
+  scribd: 275801758
+  smashwords:
 
-collections:
+included_in:
   - winding-unwinding
 
 ---
