@@ -1,0 +1,17 @@
+---
+title: Coming Soon
+layout: page
+permalink: /:path/:basename/
+---
+{% assign upcoming_books = site.books | where: 'availability', 'soon' | sort: 'date' %}
+{% if upcoming_books.size > 0 %}
+{% for book in upcoming_books %}
+{% include book/description.html book=book %}
+{% endfor %}
+{% else %}
+<p>We are working on our next release.</p>
+<p>In the meantime, here are some things you can do:</p>
+<p>Check out <a href='/'>our new releases</a>.</p>
+<p>Browse <a href='/books/'>our whole catalog</a>.</p>
+<p>Follow us <a href='https://www.facebook.com/DriscollBrookPress'>on Facebook</a>.</p>
+{% endif %}
