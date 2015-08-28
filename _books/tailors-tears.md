@@ -1,5 +1,5 @@
 ---
-title: Tailor's Tears
+title: Tailor’s Tears
 date: 2014-03-19
 availability: now
 
@@ -27,7 +27,6 @@ included_in:
  - winding-unwinding
 
 ---
-
 
 "What does a girl have to do around here to prove she is a virgin?"
 

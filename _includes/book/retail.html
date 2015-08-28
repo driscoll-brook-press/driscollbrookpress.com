@@ -1,11 +1,10 @@
 {% if include.book.offers %}
 <div class='retail'>
   <h3>Buy</h3>
-  <p>
+  <ul class='inline piped'>
     {% for offer in include.book.offers %}
-    {{ offer | offer_link: include.book }}
-    {% unless forloop.last %} | {% endunless %}
+    <li>{{ offer | offer_link: include.book }}</li>
     {% endfor %}
-  </p>
+  </ul>
 </div>
 {% endif %}

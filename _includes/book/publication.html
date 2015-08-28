@@ -2,8 +2,8 @@
 {% assign paperback = include.book.paperback %}
 
 <div class='publication'>
-  <h3>Product Details</h3>
-  <p>Publication Date: {{ include.book.date }}</p>
+  <h3>Publication Details</h3>
+  <p>Publication Date: {{ include.book.date | date: "%B %-d, %Y" }}</p>
   <p>
     Paperback {{ paperback.price }}
     {% if paperback.isbn %}
