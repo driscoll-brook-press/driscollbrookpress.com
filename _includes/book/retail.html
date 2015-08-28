@@ -1,11 +1,11 @@
 {% if include.book.offers %}
-<section class='retail'>
-  <header><h1>Buy</h1></header>
+<div class='retail'>
+  <h3>Buy</h3>
   <p>
     {% for offer in include.book.offers %}
     {{ include.book | offer_link: offer }}
     {% unless forloop.last %} | {% endunless %}
     {% endfor %}
   </p>
-</section>
+</div>
 {% endif %}

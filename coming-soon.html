@@ -1,12 +1,15 @@
 ---
 title: Coming Soon
-layout: page
+layout: catalog
 permalink: /:path/:basename/
 ---
 {% assign upcoming_books = site.books | coming_soon %}
 {% if upcoming_books.size > 0 %}
 {% for book in upcoming_books %}
-{% include book/description.html book=book %}
+<div role='article' class='book'>
+  {% include book/cover.html book=book %}
+  {% include book/description.html book=book %}
+</div>
 {% endfor %}
 {% else %}
 <p>We are working on our next release.</p>

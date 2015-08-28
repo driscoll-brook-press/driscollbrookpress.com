@@ -1,5 +1,5 @@
-{% if include.book.stories %}
-<section style='contents'>
+{% if include.book.includes %}
+<div class='see-also'>
   <p>
     <strong>{{ include.book.title }}</strong>
     includes these fine stories:
@@ -10,11 +10,11 @@
     {% endfor %}
   </ul>
   <p>Each story is also available as a standalone book.</p>
-</section>
+</div>
 {% endif %}
 
-{% if include.book.collections %}
-<section style='collected-in'>
+{% if include.book.included_in %}
+<div style='see-also'>
   <p>
     <strong>{{ include.book.title }}</strong>
     also appears with other fine stories in:
@@ -24,5 +24,5 @@
     <li>{{ slug }}</li>
     {% endfor %}
   </ul>
-</section>
+</div>
 {% endif %}

@@ -1,11 +1,13 @@
 ---
 title: Available Now
-layout: page
+layout: catalog
 permalink: /:path/:basename/
 ---
+<div role='article' class='gallery'>
 {% assign books = site.books | available_now %}
 {% for book in books %}
 {% unless book.availability == 'soon' %}
-{% include book/description.html book=book %}
+{% include book/cover.html book=book %}
 {% endunless %}
 {% endfor %}
+</div>

@@ -1,10 +1,8 @@
 {% assign ebook = include.book.ebook %}
 {% assign paperback = include.book.paperback %}
 
-<section class='publication'>
-  <header>
-    <h1>Product Details</h1>
-  </header>
+<div class='publication'>
+  <h3>Product Details</h3>
   <p>Publication Date: {{ include.book.date }}</p>
   <p>
     Paperback {{ paperback.price }}
@@ -23,4 +21,4 @@
     | <span class='nobreak'>{{ ebook.isbn  | isbn13: '-' }}</span>
     {% endif %}
   </p>
-</section>
+</div>

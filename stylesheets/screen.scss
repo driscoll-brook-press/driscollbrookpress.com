@@ -1,6 +1,10 @@
 ---
----
-@import 'layout';
+...
+$site-hue: 180;
+$dark: hsl($site-hue, 100%, 20%);
+$medium: hsl($site-hue, 20%, 60%);
+$light: hsl($site-hue, 10%, 92%);
+$lightest: hsl($site-hue, 5%, 98.5%);
 
 $leading: 1.5;
 $inter-paragraph-space: $leading * 1rem;
@@ -13,11 +17,15 @@ $heading-1-size: 1.5rem;
 $heading-2-size: 1.17rem;
 $detail-text-size: .75rem;
 
-$site-hue: 180;
-$dark: hsl($site-hue, 100%, 20%);
-$medium: hsl($site-hue, 20%, 60%);
-$light: hsl($site-hue, 10%, 92%);
-$lightest: hsl($site-hue, 5%, 98.5%);
+$body-width: 60rem;
+$main-width: 40rem;
+$main-width-percent: $main-width / $body-width * 100%;
+$left-column-width: 20rem;
+$gutter-width: 2rem;
+$right-column-start: $left-column-width + $gutter-width;
+
+$padding: 2rem;
+$padding-percent: $padding / $main-width * 100%;
 
 html {
   background-color: $medium;
@@ -27,19 +35,14 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 
-p, li {
+p, li, dt, dd {
   line-height: $leading;
-}
-
-p, ul, ol, blockquote {
-  margin: $inter-paragraph-space auto;
-  padding: 0;
 }
 
 a {
   text-decoration: none;
   &:hover { text-decoration: underline; }
-  color: inherit;
+  color: $dark;
 }
 
 blockquote {
@@ -49,22 +52,18 @@ blockquote {
   em, em em em { font-style: normal; }
 }
 
-body {
-  background-color: $lightest;
-  font-family: $text-font;
-  font-size: $text-size;
-}
-
 em, em em em { font-style: italic; }
 em em { font-style: normal; }
 
 h1, h2, h3, h4 {
   margin: 0;
   padding: 0;
+  color: $dark;
 }
 
-h1 { font-size: $heading-1-size; }
-h2 { font-size: $heading-2-size; }
+h1 { font-size: $banner-title-size; }
+h2 { font-size: $heading-1-size; }
+h3 { font-size: $heading-2-size; }
 
 img {
   border: 0;
@@ -72,35 +71,72 @@ img {
   height: auto;
 }
 
+p, ul, ol, blockquote { padding: 0; }
+
 ol, ul { list-style: none; }
 li { margin: 0; }
 
+[role='article'] { clear: both; }
 
-main {
-  ol { list-style-type: decimal; }
-  ul { list-style-type: disc; }
-}
+[role='article'] + [role='article'] { margin-top: 4rem; }
 
-main, #sidebar {
-  h1, h2, h3, h4, a { color: $dark; }
-}
-
-.banner {
+[role='banner'] {
   background-color: $dark;
   padding: .5em;
-  font-size: $banner-title-size;
-  font-weight: normal;
-  color: $light;
+  h1, h2 {
+    font-weight: normal;
+    a { color: $light; }
+  }
 }
 
-.book-links {
-  overflow: hidden;
-  li {
-    width: 48%;
-    margin-bottom: .5em;
-    &:nth-child(odd) { float: left; }
-    &:nth-child(even) { float: right; }
+[role='complementary'] {
+  float: right;
+  margin: 0 0 1em 1em;
+  ul {
+    margin: 0;
+    list-style: none;
+    font-size: $detail-text-size;
   }
+}
+
+[role='contentinfo'] {
+  margin-top: 1em;
+}
+
+[role='document'] {
+  max-width: $body-width;
+  margin: 0 auto;
+  background-color: $lightest;
+  font-family: $text-font;
+  font-size: $text-size;
+}
+
+[role='main'] {
+  padding: $padding;
+  p, ul, ol, blockquote {
+    margin: $inter-paragraph-space auto;
+    padding: 0;
+  }
+  ol { list-style-type: decimal; }
+  ul { list-style-type: disc; }
+  clear: both;
+}
+
+[role='menubar'] {
+  li + li::before { content: ' | '; }
+}
+
+[role='navigation'] {
+  color: $dark;
+}
+
+.book {
+    & > * { margin-left: $right-column-start; }
+    .cover {
+        float: left;
+        margin-left: 0;
+        width: $left-column-width;
+    }
 }
 
 .boxed, .chrome {
@@ -115,10 +151,7 @@ main, #sidebar {
   padding: .5em 1em;
 }
 
-.hanging {
-  margin-left: 1em;
-  text-indent: -1em;
-}
+.catalog { }
 
 .centered { text-align: center; }
 
@@ -129,8 +162,12 @@ main, #sidebar {
   color: $dark;
 }
 
-.heading {
-  margin: 2rem 0 1rem;
+.gallery {
+    .cover {
+        display: inline-block;
+        width: 15rem;
+        margin: 5px;
+    }
 }
 
 .inline {
@@ -142,24 +179,6 @@ main, #sidebar {
   }
 }
 
-.navlinks li + li::before { content: ' | '; }
+.share { margin-left: 0; }
 
-.post-details {
-  font-size: $detail-text-size;
-}
-
-.share {
-  float: right;
-  margin: 0 0 1em 1em;
-  ul {
-    margin: 0;
-    list-style: none;
-    font-size: $detail-text-size;
-  }
-}
-
-.tags li + li::before { content: ', '; }
-
-.title {
-  font-variant: small-caps;
-}
+.title { font-variant: small-caps; }
