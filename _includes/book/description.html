@@ -5,6 +5,6 @@
 {% comment %}
   = partial 'layouts/see-also', locals: {book: book, catalog: catalog}
   = partial 'layouts/retail', locals: {book: book}
-  = partial 'layouts/product', locals: {book: book}
 {% endcomment %}
+  {% include book/product.html book=include.book %}
 </article>

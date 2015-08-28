@@ -1,0 +1,35 @@
+{% assign ebook = include.book.ebook %}
+{% assign paperback = include.book.paperback %}
+
+<section class='publication'>
+  <header>
+    <h1>Product Details</h1>
+  </header>
+  <p>Publication Date: {{ include.book.date }}</p>
+  <p>
+    Paperback {{ paperback.price }}
+    {% if paperback.isbn %}
+    | <span class='nobreak'>{{ paperback.isbn }}</span>
+    | <span class='nobreak'>{{ paperback.isbn }}</span>
+    {% endif %}
+    {% if paperback.pages %}
+    | <span class='nobreak'>{{ paperback.pages }} pages</span>
+    {% endif %}
+  </p>
+  <p>
+    Ebook {{ ebook.price }}
+    {% if ebook.isbn %}
+    | <span class='nobreak'>{{ ebook.isbn }}</span>
+    | <span class='nobreak'>{{ ebook.isbn }}</span>
+    {% endif %}
+  </p>
+</section>
+
+  -ebook = book.ebook
+  %p
+    Ebook #{ebook.price}
+    -if ebook.isbn
+      |
+      %span.nobreak #{isbn10(ebook.isbn, '-')}
+      |
+      %span.nobreak #{isbn13(ebook.isbn, '-')}
