@@ -66,10 +66,9 @@ module Retail
 
   MARKETPLACE = Marketplace.new
 
-  def retailer_links(book)
-    return [] unless book['offers']
-    book['offers'].map { |details| Offer.new(book, details) }
-      .map { |offer| MARKETPLACE.retailer(offer.offerer).link_to(offer) }
+  def offer_link(book, details)
+    offer = Offer.new(book, details)
+    MARKETPLACE.retailer(offer.offerer).link_to(offer)
   end
 end
 

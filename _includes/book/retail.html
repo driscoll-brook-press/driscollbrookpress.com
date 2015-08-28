@@ -1,6 +1,11 @@
 {% if include.book.offers %}
 <section class='retail'>
   <header><h1>Buy</h1></header>
-  <p>{{ include.book | retailer_links | join: ' | '}}</p>
+  <p>
+    {% for offer in include.book.offers %}
+    {{ include.book | offer_link: offer }}
+    {% unless forloop.last %} | {% endunless %}
+    {% endfor %}
+  </p>
 </section>
 {% endif %}
