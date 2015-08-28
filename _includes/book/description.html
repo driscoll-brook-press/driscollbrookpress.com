@@ -2,8 +2,8 @@
   {% include book/cover.html book=include.book %}
   {% include book/title.html book=include.book %}
   {% include book/about.html book=include.book %}
+  {% include book/see-also.html book=include.book %}
 {% comment %}
-  = partial 'layouts/see-also', locals: {book: book, catalog: catalog}
   = partial 'layouts/retail', locals: {book: book}
 {% endcomment %}
   {% include book/product.html book=include.book %}
