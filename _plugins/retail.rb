@@ -12,9 +12,9 @@ module Retail
   SCRIBD_URL_TEMPLATE = 'https://www.scribd.com/book/%s'
   SMASHWORDS_URL_TEMPLATE = "https://www.smashwords.com/books/search?query=%s&ref=#{SMASHWORDS_AFFILIATE_ID}"
 
-  IDENTIFIED_BY_EBOOK_ISBN13 = lambda { |offer| isbn13(offer.book.ebook.isbn) }
-  IDENTIFIED_BY_PAPERBACK_ISBN10 = lambda { |offer| isbn10(offer.book.paperback.isbn) }
-  IDENTIFIED_BY_PAPERBACK_ISBN13 = lambda { |offer| isbn13(offer.book.paperback.isbn) }
+  IDENTIFIED_BY_EBOOK_ISBN13 = lambda { |offer| ISBN::CALCULATOR.isbn13(offer.book['ebook']['isbn']) }
+  IDENTIFIED_BY_PAPERBACK_ISBN10 = lambda { |offer| ISBN::CALCULATOR.isbn10(offer.book['paperback']['isbn']) }
+  IDENTIFIED_BY_PAPERBACK_ISBN13 = lambda { |offer| ISBN::CALCULATOR.isbn13(offer.book['paperback']['isbn']) }
   IDENTIFIED_BY_STOCK_NUMBER = lambda { |offer| offer.stock_number }
 
   class Marketplace
@@ -60,15 +60,17 @@ module Retail
     end
 
     def link_to(offer)
-      link(@name, @url_template % @identify_offer.call(offer))
+      "<a href='#{@url_template % @identify_offer.call(offer)}'>#{@name}</a>"
     end
   end
 
   MARKETPLACE = Marketplace.new
 
   def retailer_links(book)
-    return [] unless book.offers
-    book.offers.map { |details| Offer.new(book, details) }
+    return [] unless book['offers']
+    book['offers'].map { |details| Offer.new(book, details) }
       .map { |offer| MARKETPLACE.retailer(offer.offerer).link_to(offer) }
   end
 end
+
+Liquid::Template.register_filter(Retail)

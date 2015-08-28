@@ -36,6 +36,12 @@ module ISBN
     isbn_parts <<= check_digit.to_s
     isbn_parts.join(separator)
   end
+
+  class Calculator
+    include ISBN
+  end
+
+  CALCULATOR = Calculator.new
 end
 
 Liquid::Template.register_filter(ISBN)
