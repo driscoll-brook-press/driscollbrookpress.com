@@ -12,7 +12,7 @@ ebook:
   price: $2.99
   isbn: 2
 
-offers:
+sold_by:
   amazon:
   ibooks:
   inktera: b3f8e2ac-30e5-4e1e-bc6d-7467a3feeeae
@@ -37,7 +37,7 @@ A pleasant looking couple offers wary Carla a ride.
 
 The fare: "Tell us the story."
 
-Not just any story: The story.
+Not just any story: *The* story.
 
 But this is one story
 Carla would rather not reveal to complete strangers.

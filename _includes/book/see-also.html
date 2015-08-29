@@ -5,7 +5,7 @@
     includes these fine stories:
   </p>
   <ul style='book-list'>
-    {% for slug in include.book.stories %}
+    {% for slug in include.book.includes %}
     <li>{{ slug }}</li>
     {% endfor %}
   </ul>
@@ -20,7 +20,7 @@
     also appears with other fine stories in:
   </p>
   <ul style='book-list'>
-    {% for slug in include.book.collections %}
+    {% for slug in include.book.included_in %}
     <li>{{ slug }}</li>
     {% endfor %}
   </ul>

@@ -12,7 +12,7 @@ ebook:
   price: $2.99
   isbn: 3
 
-offers:
+sold_by:
   amazon:
   ibooks:
   inktera: 91654c9f-c4a7-4f03-80ef-e03bb3046c68

@@ -6,14 +6,14 @@ availability: soon
 
 paperback:
   price: $4.99
-  pages: 15
+#  pages: 15
 #  isbn: 18
 
 ebook:
   price: $2.99
 #  isbn: 19
 
-offers:
+sold_by:
 #  amazon:
 #  ibooks:
 #  inktera:

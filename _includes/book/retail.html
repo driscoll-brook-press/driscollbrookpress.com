@@ -1,8 +1,8 @@
-{% if include.book.offers %}
+{% if include.book.sold_by %}
 <div class='retail'>
   <h3>Buy</h3>
   <ul class='inline piped'>
-    {% for offer in include.book.offers %}
+    {% for offer in include.book.sold_by %}
     <li>{{ offer | offer_link: include.book }}</li>
     {% endfor %}
   </ul>
