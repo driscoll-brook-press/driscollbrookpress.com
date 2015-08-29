@@ -7,7 +7,7 @@ permalink: /:path/:basename/
 {% if upcoming_books.size > 0 %}
 {% for book in upcoming_books %}
 <div role='article' class='book'>
-  {% include book/cover.html book=book %}
+  {% include book/cover-book-link.html book=book %}
   {% include book/description.html book=book %}
 </div>
 {% endfor %}

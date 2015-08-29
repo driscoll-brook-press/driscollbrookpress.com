@@ -4,7 +4,7 @@ $body-width: 60rem;
 $left-column-width: 100% / 3;
 $gutter-width: 2rem;
 
-$site-hue: 180;
+$site-hue: 210;
 $dark: hsl($site-hue, 100%, 20%);
 $medium: hsl($site-hue, 20%, 60%);
 $light: hsl($site-hue, 10%, 92%);
@@ -128,6 +128,16 @@ li { margin: 0; }
 .book {
   clear: both;
   [role='heading'] h2 { padding-bottom: .5rem; }
+
+  .cover {
+    float:left;
+    width: $left-column-width;
+  }
+
+  .description {
+    margin-left: $left-column-width;
+    padding-left: $gutter-width;
+  }
 }
 
 .boxed {
@@ -163,21 +173,12 @@ li { margin: 0; }
   margin-left: 0;
 }
 
-.left {
-  float:left;
-  width: $left-column-width;
-}
-
 .piped li + li::before { content: ' | '; }
 
 .retail ul { margin: 1.5rem 0; }
 
-.right {
-  margin-left: $left-column-width;
-  padding-left: $gutter-width;
-}
-
 .see-also ul { margin-left: $gutter-width; }
+
 .share { margin-left: 0; }
 
 .title { font-variant: small-caps; }
