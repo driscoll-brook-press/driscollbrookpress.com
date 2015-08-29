@@ -1,12 +1,14 @@
 module Book
-  def book_link_for_slug slug
-    @books ||= Jekyll.sites[0].collections['books'].docs
-    book = @books.find { |book| slug == slug_for_book(book) }
+  def book_link book
     "<a href='#{book.url}'>#{book.data['title']}</a>"
   end
 
-  def slug_for_book book
-    book.url.split('/').last.split('.').first
+  def with_slug books, slug
+    books.find { |book| slug == self.slug(book.url) }
+  end
+
+  def slug url
+    url.split('/').last.split('.').first
   end
 end
 

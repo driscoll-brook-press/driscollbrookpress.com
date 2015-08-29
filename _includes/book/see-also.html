@@ -6,7 +6,7 @@
   </p>
   <ul style='book-list'>
     {% for slug in include.book.includes %}
-    <li>{{ slug | book_link_for_slug }}</li>
+    <li>{{ site.books | with_slug: slug | book_link }}</li>
     {% endfor %}
   </ul>
   <p>Each story is also available as a standalone book.</p>
@@ -21,7 +21,7 @@
   </p>
   <ul style='book-list'>
     {% for slug in include.book.included_in %}
-    <li>{{ slug | book_link_for_slug }}</li>
+    <li>{{ site.books | with_slug: slug | book_link }}</li>
     {% endfor %}
   </ul>
 </div>

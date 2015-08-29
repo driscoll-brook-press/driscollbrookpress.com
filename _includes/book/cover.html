@@ -1,5 +1,5 @@
 <div class='left'>
   <a href='{{ include.book.url }}'>
-    <img src='/images/{{ include.book.path | split: '/' | last | split: '.' | first }}-cover-web.jpg' />
+    <img src='/images/{{ include.book.url | slug }}-cover-web.jpg' />
   </a>
 </div>
