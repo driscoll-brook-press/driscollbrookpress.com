@@ -6,7 +6,7 @@
   </p>
   <ul style='book-list'>
     {% for slug in include.book.includes %}
-    <li>{{ slug }}</li>
+    <li>{{ slug | book_link_for_slug }}</li>
     {% endfor %}
   </ul>
   <p>Each story is also available as a standalone book.</p>
@@ -14,14 +14,14 @@
 {% endif %}
 
 {% if include.book.included_in %}
-<div style='see-also'>
+<div class='see-also'>
   <p>
     <strong>{{ include.book.title }}</strong>
     also appears with other fine stories in:
   </p>
   <ul style='book-list'>
     {% for slug in include.book.included_in %}
-    <li>{{ slug }}</li>
+    <li>{{ slug | book_link_for_slug }}</li>
     {% endfor %}
   </ul>
 </div>

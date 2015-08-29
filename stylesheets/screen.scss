@@ -101,7 +101,6 @@ li { margin: 0; }
 
 [role='contentinfo'] {
   clear: both;
-  margin-top: 1em;
 }
 
 [role='document'] {
@@ -123,8 +122,6 @@ li { margin: 0; }
   ol { list-style-type: decimal; }
   ul { list-style-type: disc; }
 }
-
-[role='menubar'] { margin: 0; }
 
 [role='navigation'] { color: $dark; }
 
@@ -152,6 +149,7 @@ li { margin: 0; }
   border-bottom-style: solid;
   font-weight: bold;
   color: $dark;
+  p, ul { margin: .5rem; }
 }
 
 .gallery .cover {
@@ -179,6 +177,7 @@ li { margin: 0; }
   padding-left: $gutter-width;
 }
 
+.see-also ul { margin-left: $gutter-width; }
 .share { margin-left: 0; }
 
 .title { font-variant: small-caps; }
