@@ -76,7 +76,7 @@ li { margin: 0; }
 
 [role='article'] { clear: both; }
 
-[role='article'] + [role='article'] { margin-top: 4rem; }
+[role='article'] + [role='article'], [role='region'] + [role='region'] { margin-top: 4rem; }
 
 [role='banner'] {
   background-color: $dark;
@@ -165,7 +165,7 @@ li { margin: 0; }
 .gallery .cover {
   display: inline-block;
   max-width: 15rem;
-  margin: 5px;
+  margin: 1rem 5px 0;
 }
 
 .inline li {

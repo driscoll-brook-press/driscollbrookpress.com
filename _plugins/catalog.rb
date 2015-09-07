@@ -3,18 +3,30 @@ module Catalog
 
   def available_now(books)
     books.select { |book| AVAILABLE.include? book.data['availability'] }
-      .sort_by { |book| book.data['sort'] || book.data['title'] }
+  end
+
+  def by_title(books)
+    books.sort_by { |book| book.data['sort'] || book.data['title'] }
   end
 
   def coming_soon(books)
     books.select { |book| book.data['availability'] == 'soon' }
-      .sort_by { |book| book.data['date'] }
+  end
+
+  def in_genre(books, genre)
+    books.select { |book| book.data['genre'] == genre }
   end
 
   def new_releases(books)
     books.select { |book| book.data['availability'] == 'new' }
-      .sort_by { |book| book.data['date'] }
-      .reverse
+  end
+
+  def newest_first(books)
+    oldest_first(books).reverse
+  end
+
+  def oldest_first(books)
+    books.sort_by { |book| book.data['date'] }
   end
 end
 

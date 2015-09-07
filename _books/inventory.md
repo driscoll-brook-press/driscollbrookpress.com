@@ -2,6 +2,7 @@
 title: Inventory
 date: 2015-09-08
 availability: soon
+genre: mainstream
 
 paperback:
   price: $4.99

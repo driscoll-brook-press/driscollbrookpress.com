@@ -2,6 +2,7 @@
 title: Winding Unwinding
 date: 2014-08-11
 availability: new
+genre: fantasy
 
 paperback:
   price: $10.99

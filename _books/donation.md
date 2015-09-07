@@ -3,6 +3,7 @@ title: The Donation
 sort: Donation, The
 date: 2015-08-11
 availability: new
+genre: mainstream
 
 paperback:
   price: $4.99

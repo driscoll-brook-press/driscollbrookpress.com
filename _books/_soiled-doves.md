@@ -3,6 +3,7 @@ title: The Curse of the Soiled Doves
 sort: Curse of the Soiled Doves, The
 date: 2015-10-11
 availability: soon
+genre: fantasy
 
 paperback:
   price: $4.99

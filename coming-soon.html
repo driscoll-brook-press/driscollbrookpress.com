@@ -3,7 +3,7 @@ title: Coming Soon
 layout: catalog
 permalink: /:path/:basename/
 ---
-{% assign upcoming_books = site.books | coming_soon %}
+{% assign upcoming_books = site.books | coming_soon | oldest_first %}
 {% if upcoming_books.size > 0 %}
 {% for book in upcoming_books %}
 <div role='article' class='book'>

@@ -2,6 +2,7 @@
 title: Double or Nothing
 date: 2014-09-15
 availability: now
+genre: crime
 
 paperback:
   isbn: 12

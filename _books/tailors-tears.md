@@ -2,6 +2,7 @@
 title: Tailor’s Tears
 date: 2014-03-19
 availability: now
+genre: fantasy
 
 paperback:
   price: $4.99

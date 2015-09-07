@@ -1,11 +1,26 @@
 ---
-title: Available Now
+title: Catalog
 layout: catalog
 permalink: /:path/:basename/
 ---
-<div role='article' class='gallery centered'>
-{% assign books = site.books | available_now %}
-{% for book in books %}
+{% assign books = site.books %}
+{% assign genres = site.data.genres %}
+<div role='article' class='centered'>
+<h2 class='title'>
+<ul class='inline piped'>
+{% for genre in genres %}
+<li><a href='#{{ genre[0] }}' class='title'>{{ genre[1] }}</a></li>
+{% endfor %}
+</ul>
+</h2>
+
+{% for genre in genres %}
+{% assign genre_books = books | in_genre: genre[0] %}
+<div role='region' class='gallery'>
+<h2 class='boxed chrome title' id='{{ genre[0] }}'>{{ genre[1] }}</h2>
+{% for book in genre_books %}
 {% include book/cover-book-link.html book=book %}
+{% endfor %}
+</div>
 {% endfor %}
 </div>

@@ -3,7 +3,7 @@ title: New Releases
 layout: catalog
 permalink: /
 ---
-{% assign new_releases = site.books | new_releases %}
+{% assign new_releases = site.books | new_releases | newest_first %}
 {% for book in new_releases %}
 <div role='article' class='book'>
   {% include book/cover-book-link.html book=book %}
