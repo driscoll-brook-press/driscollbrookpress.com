@@ -1,7 +1,7 @@
 ---
 title: Inventory
 date: 2015-09-08
-availability: soon
+availability: new
 genre: mainstream
 
 paperback:
@@ -14,14 +14,14 @@ ebook:
   isbn: 19
 
 sold_by:
-#  amazon:
+  amazon:
   ibooks:
-#  inktera:
+  inktera: 047047ac-41f8-4ed6-a8b1-965a909f6504
   kindle: B013OA36I0
   kobo:
   nook: 2940152285772
-#  oyster:
-#  scribd: 274935744
+  oyster: zHjsYVprFuzWtinh5nU9UH
+  scribd: 274935744
   smashwords:
 ---
 
