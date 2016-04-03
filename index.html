@@ -5,8 +5,8 @@ permalink: /
 ---
 {% assign new_releases = site.books | new_releases | newest_first %}
 {% for book in new_releases %}
-<div role='article' class='book'>
+<article class='book'>
   {% include book/cover-book-link.html book=book %}
   {% include book/description.html book=book %}
-</div>
+</article>
 {% endfor %}

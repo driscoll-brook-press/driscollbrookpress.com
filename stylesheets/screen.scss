@@ -74,10 +74,6 @@ ol, ul { list-style: none; }
 
 li { margin: 0; }
 
-[role='article'] { clear: both; }
-
-[role='article'] + [role='article'], [role='region'] + [role='region'] { margin-top: 4rem; }
-
 .banner {
   background-color: $dark;
   padding: 0.5em;
@@ -120,6 +116,10 @@ main {
   ol { list-style-type: decimal; }
   ul { list-style-type: disc; }
 }
+
+article { clear: both; }
+
+article + article, [role='region'] + [role='region'] { margin-top: 4rem; }
 
 footer {
   clear: both;
