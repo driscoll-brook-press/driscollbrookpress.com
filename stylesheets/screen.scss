@@ -54,6 +54,7 @@ article { clear: both; }
 
 footer {
   clear: both;
+  padding: .5rem;
 }
 
 .about { text-align: center; }
@@ -83,6 +84,8 @@ footer {
   }
 }
 
+.book + .book { margin-top: 4rem; }
+
 .boxed {
   border-style: solid;
   background-color: $light;
@@ -105,10 +108,18 @@ footer {
   p, ul { margin: .5rem; }
 }
 
-.gallery .cover {
-  display: inline-block;
-  max-width: 15rem;
-  margin: 1rem 5px 0;
+.genre {
+  text-align: center;
+  margin-top: 4rem;
+  .cover {
+    display: inline-block;
+    max-width: 15rem;
+    margin: 1rem 5px 0;
+  }
+}
+
+.genres {
+  text-align: center;
 }
 
 .inline li {
@@ -121,8 +132,6 @@ footer {
 .retail ul { margin: 1.5rem 0; }
 
 .see-also ul { margin-left: $gutter-width; }
-
-.share { margin-left: 0; }
 
 .title { font-variant: small-caps; }
 
@@ -170,4 +179,4 @@ ol, ul, menu { list-style: none; }
 
 p, li, dt, dd { line-height: $leading; }
 
-p, ul, ol, blockquote { padding: 0; }
+p, ul, ol, blockquote{ padding: 0; }
