@@ -39,7 +39,6 @@ body {
 nav { color: $dark; }
 
 main {
-  clear: both;
   padding: $gutter-width;
 
   p, ul, ol, blockquote {
@@ -50,12 +49,7 @@ main {
   ul { list-style-type: disc; }
 }
 
-article { clear: both; }
-
-footer {
-  clear: both;
-  padding: .5rem;
-}
+footer { padding: .5rem; }
 
 .about { text-align: center; }
 
@@ -70,7 +64,6 @@ footer {
 }
 
 .book {
-  clear: both;
   header h2 { padding-bottom: .5rem; }
 
   .cover {
