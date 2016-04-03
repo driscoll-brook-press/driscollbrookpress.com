@@ -103,7 +103,7 @@ li { margin: 0; }
   clear: both;
 }
 
-[role='document'] {
+body {
   max-width: $body-width;
   margin: 0 auto;
   background-color: $lightest;
@@ -111,7 +111,7 @@ li { margin: 0; }
   font-size: $text-size;
 }
 
-[role='main'] {
+main {
   clear: both;
   padding: $gutter-width;
 
