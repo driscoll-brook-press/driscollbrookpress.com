@@ -78,7 +78,7 @@ li { margin: 0; }
 
 [role='article'] + [role='article'], [role='region'] + [role='region'] { margin-top: 4rem; }
 
-[role='banner'] {
+.banner {
   background-color: $dark;
   padding: 0.5em;
 
@@ -123,7 +123,7 @@ li { margin: 0; }
   ul { list-style-type: disc; }
 }
 
-[role='navigation'] { color: $dark; }
+nav { color: $dark; }
 
 .book {
   clear: both;
