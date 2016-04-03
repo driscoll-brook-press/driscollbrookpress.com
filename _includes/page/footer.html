@@ -1,4 +1,4 @@
-<div role='contentinfo' class='centered chrome'>
+<footer class='centered chrome'>
   {% capture copyright_date %}
   {% if page.copyright.date %}{{ page.copyright.date }}
   {% elsif page.date %}{{ page.date | date: '%Y' }}
@@ -8,4 +8,4 @@
   <p role='copyright'>
     &copy; {{ copyright_date }} {{ site.data.domain.author.name }}
   </p>
-</div>
+</footer>
