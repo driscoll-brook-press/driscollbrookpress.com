@@ -5,7 +5,7 @@
   {% else %}{{ site.data.domain.start_date }}&ndash;{{ site.time | date: '%Y' }}
   {% endif %}
   {% endcapture %}
-  <p role='copyright'>
+  <small>
     &copy; {{ copyright_date }} {{ site.data.domain.author.name }}
-  </p>
+  </small>
 </footer>

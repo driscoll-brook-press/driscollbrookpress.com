@@ -28,73 +28,6 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 
-p, li, dt, dd { line-height: $leading; }
-
-a {
-  text-decoration: none;
-
-  &:hover {
-    text-decoration: underline;
-  }
-  color: $dark;
-}
-
-blockquote {
-  border: 1px solid $medium;
-  background-color: $light;
-
-  p, em em { font-style: italic; }
-
-  em, em em em { font-style: normal; }
-}
-
-em, em em em { font-style: italic; }
-
-em em { font-style: normal; }
-
-h1, h2, h3, h4 {
-  margin: 0;
-  padding: 0;
-  color: $dark;
-}
-
-h1 { font-size: $banner-title-size; }
-h2 { font-size: $heading-1-size; }
-h3 { font-size: $heading-2-size; }
-
-img {
-  border: 0;
-  max-width: 100%;
-  height: auto;
-}
-
-p, ul, ol, blockquote { padding: 0; }
-
-ol, ul { list-style: none; }
-
-li { margin: 0; }
-
-.banner {
-  background-color: $dark;
-  padding: 0.5em;
-
-  h1, h2 {
-    font-weight: normal;
-    a { color: $light; }
-  }
-}
-
-[role='complementary'] {
-  float: right;
-  margin: 0 0 1em 1em;
-
-  ul {
-    margin: 0;
-    list-style: none;
-    font-size: $detail-text-size;
-  }
-}
-
 body {
   max-width: $body-width;
   margin: 0 auto;
@@ -119,10 +52,18 @@ main {
 
 article { clear: both; }
 
-article + article, [role='region'] + [role='region'] { margin-top: 4rem; }
-
 footer {
   clear: both;
+}
+
+.banner {
+  background-color: $dark;
+  padding: 0.5em;
+
+  h1, h2 {
+    font-weight: normal;
+    a { color: $light; }
+  }
 }
 
 .book {
@@ -182,3 +123,49 @@ footer {
 .share { margin-left: 0; }
 
 .title { font-variant: small-caps; }
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+  color: $dark;
+}
+
+blockquote {
+  border: 1px solid $medium;
+  background-color: $light;
+
+  p, em em { font-style: italic; }
+
+  em, em em em { font-style: normal; }
+}
+
+em, em em em { font-style: italic; }
+
+em em { font-style: normal; }
+
+h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+  color: $dark;
+}
+
+h1 { font-size: $banner-title-size; }
+h2 { font-size: $heading-1-size; }
+h3 { font-size: $heading-2-size; }
+
+img {
+  border: 0;
+  max-width: 100%;
+  height: auto;
+}
+
+li { margin: 0; }
+
+ol, ul, menu { list-style: none; }
+
+p, li, dt, dd { line-height: $leading; }
+
+p, ul, ol, blockquote { padding: 0; }
