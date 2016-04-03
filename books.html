@@ -19,8 +19,10 @@ permalink: /:path/:basename/
 {% assign genre_books = books | in_genre: genre[0] %}
 <section class='genre'>
 <h2 class='boxed chrome title' id='{{ genre[0] }}'>{{ genre[1] }}</h2>
+<section class='gallery'>
 {% for book in genre_books %}
-{% include book/cover-book-link.html book=book %}
+{% include book/linked-cover-image.html book=book %}
 {% endfor %}
+</section>
 </section>
 {% endfor %}

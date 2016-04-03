@@ -12,7 +12,7 @@ module Book
   end
 
   def cover_image book
-    "<img src='#{cover_url(book)}' />"
+    "<img class='cover-image' src='#{cover_url(book)}' />"
   end
 
   def cover_url book
