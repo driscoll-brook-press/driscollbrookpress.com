@@ -1,20 +1,24 @@
 ---
 title: Coming Soon
-layout: catalog
+layout: page
 permalink: /:path/:basename/
 ---
 {% assign upcoming_books = site.books | coming_soon | oldest_first %}
 {% if upcoming_books.size > 0 %}
+<main class='catalog'>
 {% for book in upcoming_books %}
 <article class='book'>
   {% include book/cover-book-link.html book=book %}
   {% include book/description.html book=book %}
 </article>
 {% endfor %}
+</main>
 {% else %}
+<main class='about'>
 <p>We are working on our next release.</p>
 <p>In the meantime, here are some things you can do:</p>
 <p>Check out <a href='/'>our new releases</a>.</p>
 <p>Browse <a href='/books/'>our whole catalog</a>.</p>
 <p>Follow us <a href='https://www.facebook.com/DriscollBrookPress'>on Facebook</a>.</p>
+</main>
 {% endif %}
