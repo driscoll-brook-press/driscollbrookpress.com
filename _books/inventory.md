@@ -1,6 +1,6 @@
 ---
 title: Inventory
-date: 2015-09-08
+pubdate: 2015-09-08
 availability: new
 genre: mainstream
 

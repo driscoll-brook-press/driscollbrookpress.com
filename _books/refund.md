@@ -1,6 +1,6 @@
 ---
 title: Refund
-date: 2014-03-13
+pubdate: 2014-03-13
 availability: now
 genre: fantasy
 

@@ -1,7 +1,7 @@
 ---
 title: The Donation
 sort: Donation, The
-date: 2015-08-11
+pubdate: 2015-08-11
 availability: new
 genre: mainstream
 

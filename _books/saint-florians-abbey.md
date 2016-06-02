@@ -5,7 +5,7 @@ sort: Last Whiskey Bacon Cheddar Burger at Saint Florian’s Abbey, The
 art: Garuti | Dreamstime.com
 
 availability: now
-date: 2014-10-13
+pubdate: 2014-10-13
 genre: crime
 
 paperback:

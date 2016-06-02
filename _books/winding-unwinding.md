@@ -1,6 +1,6 @@
 ---
 title: Winding Unwinding
-date: 2014-08-11
+pubdate: 2014-08-11
 availability: new
 genre: fantasy
 

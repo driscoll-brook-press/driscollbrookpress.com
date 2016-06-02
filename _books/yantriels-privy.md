@@ -1,6 +1,6 @@
 ---
 title: Yantriel’s Privy
-date: 2014-05-10
+pubdate: 2014-05-10
 availability: now
 genre: fantasy
 

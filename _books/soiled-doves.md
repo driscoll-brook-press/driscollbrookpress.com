@@ -1,7 +1,7 @@
 ---
 title: The Curse of the Soiled Doves
 sort: Curse of the Soiled Doves, The
-date: 2016-07-01
+pubdate: 2016-07-01
 availability: soon
 genre: fantasy
 

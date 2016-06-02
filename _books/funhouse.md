@@ -1,6 +1,6 @@
 ---
 title: Funhouse
-date: 2014-03-31
+pubdate: 2014-03-31
 availability: now
 genre: fantasy
 

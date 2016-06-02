@@ -26,7 +26,7 @@ module Catalog
   end
 
   def oldest_first(books)
-    books.sort_by { |book| book['date'] }
+    books.sort_by { |book| book['pubdate'] }
   end
 end
 

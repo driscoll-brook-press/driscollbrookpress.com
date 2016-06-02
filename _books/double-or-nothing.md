@@ -1,6 +1,6 @@
 ---
 title: Double or Nothing
-date: 2014-09-15
+pubdate: 2014-09-15
 availability: now
 genre: crime
 

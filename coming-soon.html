@@ -8,7 +8,7 @@ permalink: /:path/:basename/
 <main class='catalog'>
 {% for book in upcoming_books %}
 <article class='book'>
-  {% include book/cover-book-link.html book=book %}
+  {% include book/linked-cover-image.html book=book %}
   {% include book/description.html book=book %}
 </article>
 {% endfor %}
