@@ -16,7 +16,7 @@ permalink: /:path/:basename/
 </section>
 
 {% for genre in genres %}
-{% assign genre_books = books | in_genre: genre[0] %}
+{% assign genre_books = books | in_genre: genre[0] | by_title %}
 <section class='genre'>
 <h2 class='boxed chrome title' id='{{ genre[0] }}'>{{ genre[1] }}</h2>
 <section class='gallery'>
