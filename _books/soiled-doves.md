@@ -18,7 +18,7 @@ sold_by:
 #  amazon:
 #  ibooks:
 #  inktera:
-#  kindle:
+  kindle: B01GIPXMNC
 #  kobo:
 #  nook:
 #  oyster:
