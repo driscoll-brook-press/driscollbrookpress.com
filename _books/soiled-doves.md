@@ -16,7 +16,7 @@ ebook:
 
 sold_by:
 #  amazon:
-#  ibooks:
+  ibooks: 1120968031
 #  inktera:
   kindle: B01GIPXMNC
 #  kobo:
