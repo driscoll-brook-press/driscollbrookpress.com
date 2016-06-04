@@ -20,7 +20,6 @@ sold_by:
   kindle: B00K98A46S
   kobo:
   nook: 2940152314526
-  oyster: mpVARKk46esDUh87FyaSSh
   scribd: 275247953
   smashwords:
 

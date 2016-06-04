@@ -21,7 +21,6 @@ sold_by:
   kindle: B01GIPXMNC
 #  kobo:
 #  nook:
-#  oyster:
 #  scribd:
 #  smashwords:
 ---

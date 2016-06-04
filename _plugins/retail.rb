@@ -8,7 +8,6 @@ module Retail
   IBOOKS_URL_TEMPLATE = "https://itunes.apple.com/us/book/isbn%s?mt=11&at=#{ITUNES_AFFILIATE_ID}"
   INKTERA_URL_TEMPLATE = 'http://www.inktera.com/store/title/%s'
   KOBO_URL_TEMPLATE = 'http://store.kobobooks.com/Search/Query?fcmedia=Book&query=%s'
-  OYSTER_URL_TEMPLATE = 'https://www.oysterbooks.com/book/%s'
   SCRIBD_URL_TEMPLATE = 'https://www.scribd.com/book/%s'
   SMASHWORDS_URL_TEMPLATE = "https://www.smashwords.com/books/search?query=%s&ref=#{SMASHWORDS_AFFILIATE_ID}"
 
@@ -27,7 +26,6 @@ module Retail
         kindle: Retailer.new('Kindle', AMAZON_URL_TEMPLATE, IDENTIFIED_BY_STOCK_NUMBER),
         kobo: Retailer.new('Kobo', KOBO_URL_TEMPLATE, IDENTIFIED_BY_EBOOK_ISBN13),
         nook: Retailer.new('Nook', BN_URL_TEMPLATE, IDENTIFIED_BY_STOCK_NUMBER),
-        oyster: Retailer.new('Oyster', OYSTER_URL_TEMPLATE, IDENTIFIED_BY_STOCK_NUMBER),
         scribd: Retailer.new('Scribd', SCRIBD_URL_TEMPLATE, IDENTIFIED_BY_STOCK_NUMBER),
         smashwords: Retailer.new('Smashwords', SMASHWORDS_URL_TEMPLATE, IDENTIFIED_BY_EBOOK_ISBN13)
       }
