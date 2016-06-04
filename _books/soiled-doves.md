@@ -19,10 +19,10 @@ sold_by:
   ibooks: 1120968031
 #  inktera:
   kindle: B01GIPXMNC
-#  kobo:
+  kobo:
 #  nook:
 #  scribd:
-#  smashwords:
+  smashwords:
 ---
 
 As California’s Department of Thaumaturgy battles a deepening drought, a mysterious force limits the flow of magic in downtown Sacramento.
