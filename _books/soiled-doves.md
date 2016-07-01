@@ -2,7 +2,7 @@
 title: The Curse of the Soiled Doves
 sort: Curse of the Soiled Doves, The
 pubdate: 2016-07-01
-availability: soon
+availability: new
 genre: fantasy
 
 paperback:
@@ -15,13 +15,13 @@ ebook:
   isbn: 20
 
 sold_by:
-#  amazon:
+  amazon:
   ibooks: 1120968031
-#  inktera:
+  inktera: 1be0266c-56ae-49b4-9a8a-05dd9333ed20
   kindle: B01GIPXMNC
   kobo:
-#  nook:
-#  scribd:
+  #nook: 2940158118685
+  scribd: 314829549
   smashwords:
 ---
 

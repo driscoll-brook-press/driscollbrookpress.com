@@ -2,7 +2,7 @@
 title: The Donation
 sort: Donation, The
 pubdate: 2015-08-11
-availability: new
+availability: now
 genre: mainstream
 
 paperback:

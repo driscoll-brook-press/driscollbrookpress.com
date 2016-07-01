@@ -1,7 +1,7 @@
 ---
 title: Inventory
 pubdate: 2015-09-08
-availability: new
+availability: now
 genre: mainstream
 
 paperback:
