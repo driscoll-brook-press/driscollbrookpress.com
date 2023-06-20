@@ -1,0 +1,11 @@
+[[link]]
+title = 'Featured'
+url = '/'
+
+[[link]]
+title = 'Catalog'
+url = '/title/'
+
+[[link]]
+title = 'About'
+url = '/about/'

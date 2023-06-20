@@ -1,0 +1,6 @@
+{{ define "main" }}
+<main>
+  {{ partial "page-header" . }}
+  {{ partial "book-spread-list" ( where .Site.RegularPages "Type" "title" | first 3 ) }}
+</main>
+{{ end }}

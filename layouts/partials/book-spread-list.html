@@ -1,0 +1,17 @@
+<div class='book-grid'>
+	{{ range . }}
+	<div class='book-spread'>
+		<hgroup class='book-spread__header book-header'>
+			<h2 class='book-header__title'>
+				<a href='{{ .RelPermalink }}'>{{ .Title }}</a>
+			</h2>
+			<p class='book-header__author'>by Dale Hartley Emery</p>
+		</hgroup>
+		<div class='book-spread__description'>
+			{{ partial "book-description" . }}
+		</div>
+		<img class='book-spread__cover' src='/images/{{ .Page.File.BaseFileName }}-cover-web.jpg'
+			alt='Cover image for {{ .Title }}' />
+	</div>
+	{{ end }}
+</div>

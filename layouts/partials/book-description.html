@@ -1,0 +1,70 @@
+<div class='book-description flow'>
+    {{ .Content }}
+
+    {{ with .Params.in }}
+    <p>
+        <strong>{{ $.Page.Title }}</strong>
+        also appears with other fine stories in:
+    </p>
+    <ul>
+        {{ range . }}
+        {{ $path := path.Join "/title/" .}}
+        {{ $page := $.Site.GetPage $path }}
+        <li><a href='{{ $page.RelPermalink }}'>{{ $page.Title }}</a></li>
+        {{ end }}
+    </ul>
+    {{ end }}
+
+    {{ with .Params.includes }}
+    <p>
+        <strong>{{ $.Page.Title }}</strong>
+        includes these fine stories:
+    </p>
+    <ul>
+        {{ range . }}
+        {{ $path := path.Join "/title/" .}}
+        {{ $page := $.Site.GetPage $path }}
+        <li><a href='{{ $page.RelPermalink }}'>{{ $page.Title }}</a></li>
+        {{ end }}
+    </ul>
+    {{ end }}
+
+    {{ with $book_id := .Params.books2read }}
+    <h3>Buy</h3>
+
+    <ul class='list--flex'>
+        <li>Paperback ${{ $.Page.Params.paperback.price }}</li>
+        {{ range $.Site.Data.retailers.paperback }}
+        <li>
+            <a href='https://books2read.com/u/{{ $book_id }}?store={{ .store }}&format=PAPERBACK'>{{ .name }}</a>
+        </li>
+        {{ end }}
+    </ul>
+
+    <ul class='list--flex'>
+        <li>Ebook ${{ $.Page.Params.ebook.price }}</li>
+        {{ range $.Site.Data.retailers.ebook }}
+        <li>
+            <a href='https://books2read.com/u/{{ $book_id }}?store={{ .store }}&format=EBOOK'>{{ .name }}</a>
+        </li>
+        {{ end }}
+        <li><a href='https://books2read.com/u/{{ $book_id }}'>More…</a></li>
+    </ul>
+    {{ end }}
+
+    <h3>Publication</h3>
+    <p>Date: {{ .Params.pubdate.Format "January 2, 2006" }}</p>
+    <ul class='list--flex'>
+        {{ with .Params.paperback }}
+        <li>Paperback:</li>
+        <li>{{ .pages }} Pages</li>
+        <li>{{ index .isbn }}</li>
+        {{ end }}
+    </ul>
+    <ul class='list--flex'>
+        {{ with .Params.ebook }}
+        <li>Ebook:</li>
+        <li>{{ index .isbn }}</li>
+        {{ end }}
+    </ul>
+</div>

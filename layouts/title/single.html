@@ -1,0 +1,13 @@
+{{ define "main" }}
+<main class='book-grid book-spread'>
+  <hgroup class='book-spread__header book-header'>
+    <h1 class='book-header__title'>{{ .Title }}</h1>
+    <p class='book-header__author'>by Dale Hartley Emery</p>
+  </hgroup>
+  <div class='book-spread__description'>
+    {{ partial "book-description" . }}
+  </div>
+  <img class='book-spread__cover' src='/images/{{ .Page.File.BaseFileName }}-cover-web.jpg'
+    alt='Cover image for {{ .Title }}' />
+</main>
+{{ end }}

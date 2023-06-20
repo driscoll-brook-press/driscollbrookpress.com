@@ -1,0 +1,12 @@
+baseURL = 'https://driscollbrookpress.com/'
+languageCode = 'en-us'
+title = 'Driscoll Brook Press'
+copyright = '© 2013–2023 Driscoll Brook Press'
+theme = 'Dale'
+
+disableKinds = ['taxonomy', 'term']
+
+[markup.goldmark]
+renderer.unsafe = true
+parser.attribute.block = true
+parser.attribute.title = true

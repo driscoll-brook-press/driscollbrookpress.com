@@ -1,0 +1,24 @@
+{{ define "main" }}
+<main class='content'>
+    {{ partial "page-header" . }}
+    <ul class='list--flex'>
+        <li>Genres:</li>
+        {{ range .Pages.GroupByParam "genre" }}
+        <li class='genre-title'><a href='#{{ .Key }}'>{{ .Key }}</a></li>
+        {{ end }}
+    </ul>
+    {{ range .Pages.GroupByParam "genre" }}
+    <div class='book-genre'>
+        <h2 id='{{ .Key }}' class='catalog__genre-title'>{{ .Key }}</h2>
+        <div class='book-genre-grid'>
+            {{ range .Pages.ByParam "sort" }}
+            <a class='book-genre__link' href='{{ .RelPermalink }}'>
+                <img class='book-genre__cover' src='/images/{{ .Page.File.BaseFileName }}-cover-web.jpg'
+                    alt='Cover image for {{ .Title }}' />
+            </a>
+            {{ end }}
+        </div>
+    </div>
+    {{ end }}
+</main>
+{{ end }}

@@ -1,0 +1,23 @@
+[[paperback]]
+name = "Amazon"
+store = "amazon-paperback"
+
+[[ebook]]
+name = "Amazon"
+store = "amazon"
+
+[[ebook]]
+name = "Apple"
+store = "apple"
+
+[[ebook]]
+name = "Kobo"
+store = "kobo"
+
+[[ebook]]
+name = "Nook"
+store = "bn"
+
+[[ebook]]
+name = "Scribd"
+store = "scribd"
